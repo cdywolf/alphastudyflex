@@ -18,7 +18,7 @@ async def lifespan(app):
     if (os.environ.get('RENDER') or os.environ.get('ASF_ENV')=='production') and os.environ.get('ASF_SECURE_COOKIE')!='1':
         raise RuntimeError('ASF_SECURE_COOKIE=1 est obligatoire en hébergement HTTPS.')
     initialize();yield
-app=FastAPI(title='AlphaStudyFlex',version='0.1.0',lifespan=lifespan)
+app=FastAPI(title='AlphaStudyFlex',version='0.1.1',lifespan=lifespan)
 
 @app.middleware('http')
 async def request_security(request,call_next):
@@ -55,7 +55,7 @@ def rate_limit(request):
     recent.append(now)
 
 @app.get('/api/health')
-def health():return {'status':'ok','version':'0.1.0','tutor':'curated','scope':'local_pilot'}
+def health():return {'status':'ok','version':'0.1.1','tutor':'curated','scope':'local_pilot'}
 @app.post('/api/setup')
 def setup_teacher(body:Setup,request:Request):
     import re
@@ -217,7 +217,7 @@ def review(aid:int,body:Review,user=Depends(teacher)):
 @app.get('/api/teacher/sources')
 def source_list(user=Depends(teacher)):
     p=data_dir()/'processed/coverage.json'
-    if p.exists():coverage=json.loads(p.read_text())
+    if p.exists():coverage=json.loads(p.read_text(encoding='utf-8'))
     else:
         with connect() as db:coverage=[json.loads(r['body']) for r in db.execute('SELECT body FROM corpus_coverage').fetchall()]
     return [{**s,'extraction':next((x for x in coverage if x['id']==s['id']),{'status':'not_extracted'})} for s in SOURCES]
@@ -227,7 +227,7 @@ def source_detail(sid:str,page:int=1,user=Depends(teacher)):
     if not s or page<1:raise HTTPException(404,'Source introuvable.')
     root=data_dir()/'processed'/sid
     p=root/f'page-{page:04d}.json' if s['pages'] else root/'document.json'
-    if p.exists():content=json.loads(p.read_text())
+    if p.exists():content=json.loads(p.read_text(encoding='utf-8'))
     else:
         with connect() as db:record=db.execute('SELECT body FROM corpus_pages WHERE source_id=? AND page_key=?',(sid,p.name)).fetchone()
         if not record:raise HTTPException(404,'Cette source n’a pas encore été importée. Utilise le script de synchronisation du corpus.')

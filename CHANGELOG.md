@@ -1,3 +1,8 @@
+# 0.1.1 — Encodage Windows
+
+- Lecture et écriture UTF-8 explicites pour les contenus pédagogiques et le corpus.
+- Les données, comptes et résultats existants sont conservés. Les anciennes tentatives gardent leur snapshot ; leurs éventuels caractères déjà altérés ne sont pas modifiés automatiquement.
+
 # Historique
 
 ## 0.1.0 — 2026-10-01

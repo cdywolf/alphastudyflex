@@ -1,7 +1,7 @@
 import hashlib,json
 from .db import ROOT
 
-def read(name):return json.loads((ROOT/'content'/f'{name}.json').read_text())
+def read(name):return json.loads((ROOT/'content'/f'{name}.json').read_text(encoding='utf-8'))
 SOURCES=read('sources');CURRICULUM=read('curriculum');RULES=read('pedagogy');QUESTIONS=read('questions')
 QMAP={q['id']:q for q in QUESTIONS}
 SKILLS=CURRICULUM['chapters'][0]['skills']

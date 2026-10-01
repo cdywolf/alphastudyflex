@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 def main():
-    load=lambda n:json.loads((ROOT/'content'/f'{n}.json').read_text())
+    load=lambda n:json.loads((ROOT/'content'/f'{n}.json').read_text(encoding='utf-8'))
     sources=load('sources');questions=load('questions');curriculum=load('curriculum');rules=load('pedagogy')
     ids={s['id']:s for s in sources};skills={s['id'] for s in curriculum['chapters'][0]['skills']}
     assert len(ids)==len(sources)==17
