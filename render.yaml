@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: alphastudyflex
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.lock
+    startCommand: python -m uvicorn app.main:app --host 0.0.0.0 --port $PORT --proxy-headers
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      - key: ASF_ENV
+        value: production
+      - key: ASF_SECURE_COOKIE
+        value: "1"
+      - key: DATABASE_URL
+        sync: false
+      - key: ASF_SETUP_TOKEN
+        generateValue: true
+      - key: ASF_INVITE_CODE
+        generateValue: true

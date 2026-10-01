@@ -1,0 +1,146 @@
+[
+  {
+    "id": "P01",
+    "title": "Diagnostiquer les prérequis",
+    "implementation": "Diagnostic distinct de la pratique et évaluation finale ; les preuves du diagnostic sont conservées.",
+    "sources": [
+      {
+        "id": "pedagogy-ipse",
+        "pdf_page": 3
+      },
+      {
+        "id": "ref-sm",
+        "section": "Pratiques d’évaluation en SVT > 2.1. Evaluation diagnostique",
+        "block_id": "b493"
+      },
+      {
+        "id": "ref-exp",
+        "section": "Pratique d’évaluation en SVT > 2.1. Evaluation diagnostique",
+        "block_id": "b675"
+      }
+    ]
+  },
+  {
+    "id": "P02",
+    "title": "Décrire des acquis observables",
+    "implementation": "Chaque compétence comprend un verbe observable, un indicateur de réussite et des prérequis.",
+    "sources": [
+      {
+        "id": "ref-sm",
+        "section": "Introduction et acquis d’apprentissage",
+        "block_id": "b431"
+      },
+      {
+        "id": "ref-exp",
+        "section": "Introduction et acquis d’apprentissage",
+        "block_id": "b588"
+      },
+      {
+        "id": "guide-almoufid",
+        "pdf_page": 8
+      }
+    ]
+  },
+  {
+    "id": "P03",
+    "title": "Distinguer connaissances, outils et méthode",
+    "implementation": "Trois axes suivis séparément. Les tâches ouvertes de justification restent en revue humaine.",
+    "sources": [
+      {
+        "id": "ref-sm",
+        "section": "Acquis d’apprentissage : expression, maîtrise d’outils et maîtrise méthodologique",
+        "block_id": "b535"
+      },
+      {
+        "id": "ref-exp",
+        "section": "Acquis d’apprentissage : expression, maîtrise d’outils et maîtrise méthodologique",
+        "block_id": "b717"
+      }
+    ]
+  },
+  {
+    "id": "P04",
+    "title": "Faire observer avant d’expliquer",
+    "implementation": "La séance part d’un document et d’une question. L’élève dispose d’indices successifs avant la synthèse.",
+    "sources": [
+      {
+        "id": "guide-univers",
+        "section": "Démarche scientifique d’investigation"
+      },
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 6
+      }
+    ]
+  },
+  {
+    "id": "P05",
+    "title": "Évaluer pour remédier",
+    "implementation": "Les erreurs déclenchent une activité de la compétence concernée ; les réussites aidées ne valent pas une réussite autonome.",
+    "sources": [
+      {
+        "id": "ref-exp",
+        "section": "2.2. Evaluation formative",
+        "block_id": "b679"
+      },
+      {
+        "id": "ref-sm",
+        "section": "2.2. Evaluation formative",
+        "block_id": "b497"
+      },
+      {
+        "id": "pedagogy-ipse",
+        "pdf_page": 7
+      }
+    ]
+  },
+  {
+    "id": "P06",
+    "title": "Rendre les critères explicites",
+    "implementation": "Chaque question possède un corrigé, une explication, des indices et des critères. La question ouverte possède un barème avec niveaux.",
+    "sources": [
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 14
+      },
+      {
+        "id": "ref-sm",
+        "section": "4. La grille d’évaluation en SVT",
+        "block_id": "b569"
+      },
+      {
+        "id": "ref-exp",
+        "section": "4. La grille d’évaluation en SVT",
+        "block_id": "b750"
+      }
+    ]
+  },
+  {
+    "id": "P07",
+    "title": "Comparer des évaluations équivalentes",
+    "implementation": "Diagnostic et final utilisent des questions distinctes sur les mêmes trois objectifs ; le bilan reste descriptif, sans prétention causale.",
+    "sources": [
+      {
+        "id": "pedagogy-ipse",
+        "pdf_page": 9
+      }
+    ]
+  },
+  {
+    "id": "P08",
+    "title": "Séparer niveau scolaire et cadre méthodologique",
+    "implementation": "Les référentiels lycée sont utilisables pour le design pédagogique mais jamais comme corpus élève 2AC.",
+    "sources": [
+      {
+        "id": "ref-sm",
+        "section": "Introduction : cycle secondaire qualifiant",
+        "block_id": "b40"
+      },
+      {
+        "id": "ref-exp",
+        "section": "Introduction : cycle secondaire qualifiant",
+        "block_id": "b32"
+      }
+    ]
+  }
+]

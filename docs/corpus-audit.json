@@ -1,0 +1,468 @@
+{
+  "documents": 17,
+  "pdf_pages": 503,
+  "word_blocks": 921,
+  "sources": [
+    {
+      "id": "manual-apef",
+      "filename": "CAPEF_Coll_ge_SVT2.pdf",
+      "role": "student_manual",
+      "usage": "Supports visuels, situations-problèmes, cours, synthèses et exercices contextualisés.",
+      "extraction": {
+        "id": "manual-apef",
+        "status": "extracted",
+        "pages": 154,
+        "methods": {
+          "ocr": 154
+        },
+        "pedagogical_validation": "pending"
+      },
+      "empty_or_short_pages": [
+        4,
+        7,
+        60,
+        87
+      ],
+      "ocr_pages": 154,
+      "native_pages": 0,
+      "word_tables": 0,
+      "linked_pilot_questions": [],
+      "linked_rules": [],
+      "pedagogical_validation": "pending",
+      "visual_validation": "pending"
+    },
+    {
+      "id": "ex-mountains",
+      "filename": "Chaines de montagnes-Exercices.pdf",
+      "role": "exercise",
+      "usage": "Banque de tâches avec compétences, supports associés et corrigés à valider.",
+      "extraction": {
+        "id": "ex-mountains",
+        "status": "extracted",
+        "pages": 3,
+        "methods": {
+          "ocr": 3
+        },
+        "pedagogical_validation": "pending"
+      },
+      "empty_or_short_pages": [],
+      "ocr_pages": 3,
+      "native_pages": 0,
+      "word_tables": 0,
+      "linked_pilot_questions": [],
+      "linked_rules": [],
+      "pedagogical_validation": "pending",
+      "visual_validation": "pending"
+    },
+    {
+      "id": "manual-competence",
+      "filename": "Collection compétence svt 2ac(2).pdf",
+      "role": "student_manual",
+      "usage": "Supports visuels, situations-problèmes, cours, synthèses et exercices contextualisés.",
+      "extraction": {
+        "id": "manual-competence",
+        "status": "extracted",
+        "pages": 106,
+        "methods": {
+          "ocr": 106
+        },
+        "pedagogical_validation": "pending"
+      },
+      "empty_or_short_pages": [
+        1,
+        2,
+        4,
+        47,
+        82,
+        106
+      ],
+      "ocr_pages": 106,
+      "native_pages": 0,
+      "word_tables": 0,
+      "linked_pilot_questions": [],
+      "linked_rules": [],
+      "pedagogical_validation": "pending",
+      "visual_validation": "pending"
+    },
+    {
+      "id": "ex-deformations",
+      "filename": "Déformations tectoniques-exercices-2.pdf",
+      "role": "exercise",
+      "usage": "Banque de tâches avec compétences, supports associés et corrigés à valider.",
+      "extraction": {
+        "id": "ex-deformations",
+        "status": "extracted",
+        "pages": 2,
+        "methods": {
+          "ocr": 2
+        },
+        "pedagogical_validation": "pending"
+      },
+      "empty_or_short_pages": [],
+      "ocr_pages": 2,
+      "native_pages": 0,
+      "word_tables": 0,
+      "linked_pilot_questions": [],
+      "linked_rules": [],
+      "pedagogical_validation": "pending",
+      "visual_validation": "pending"
+    },
+    {
+      "id": "ex-drift",
+      "filename": "Dérive des continents-b Exerscices.pdf",
+      "role": "exercise",
+      "usage": "Banque de tâches avec compétences, supports associés et corrigés à valider.",
+      "extraction": {
+        "id": "ex-drift",
+        "status": "extracted",
+        "pages": 2,
+        "methods": {
+          "ocr": 2
+        },
+        "pedagogical_validation": "pending"
+      },
+      "empty_or_short_pages": [],
+      "ocr_pages": 2,
+      "native_pages": 0,
+      "word_tables": 0,
+      "linked_pilot_questions": [],
+      "linked_rules": [],
+      "pedagogical_validation": "pending",
+      "visual_validation": "pending"
+    },
+    {
+      "id": "manual-etincelle",
+      "filename": "ETINC_Manuel de l'éleve_2AC_SVT.pdf",
+      "role": "student_manual",
+      "usage": "Supports visuels, situations-problèmes, cours, synthèses et exercices contextualisés.",
+      "extraction": {
+        "id": "manual-etincelle",
+        "status": "extracted",
+        "pages": 14,
+        "methods": {
+          "native": 14
+        },
+        "pedagogical_validation": "pending"
+      },
+      "empty_or_short_pages": [],
+      "ocr_pages": 0,
+      "native_pages": 14,
+      "word_tables": 0,
+      "linked_pilot_questions": [
+        "d-a1",
+        "d-a2",
+        "d-g1",
+        "d-g2",
+        "d-m1",
+        "d-m2",
+        "p-a1",
+        "p-a2",
+        "p-g1",
+        "p-g2",
+        "p-m1",
+        "p-m2",
+        "f-a1",
+        "f-a2",
+        "f-g1",
+        "f-g2",
+        "f-m1",
+        "f-m2",
+        "p-open"
+      ],
+      "linked_rules": [
+        "P04",
+        "P06"
+      ],
+      "pedagogical_validation": "pending",
+      "visual_validation": "pending"
+    },
+    {
+      "id": "ex-volcano",
+      "filename": "EXERCICES LES VOLCANS.pdf",
+      "role": "exercise",
+      "usage": "Banque de tâches avec compétences, supports associés et corrigés à valider.",
+      "extraction": {
+        "id": "ex-volcano",
+        "status": "extracted",
+        "pages": 1,
+        "methods": {
+          "native": 1
+        },
+        "pedagogical_validation": "pending"
+      },
+      "empty_or_short_pages": [],
+      "ocr_pages": 0,
+      "native_pages": 1,
+      "word_tables": 0,
+      "linked_pilot_questions": [],
+      "linked_rules": [],
+      "pedagogical_validation": "pending",
+      "visual_validation": "pending"
+    },
+    {
+      "id": "ex-seisms",
+      "filename": "Exercice LES SEISMES.pdf",
+      "role": "exercise",
+      "usage": "Banque de tâches avec compétences, supports associés et corrigés à valider.",
+      "extraction": {
+        "id": "ex-seisms",
+        "status": "extracted",
+        "pages": 3,
+        "methods": {
+          "native": 3
+        },
+        "pedagogical_validation": "pending"
+      },
+      "empty_or_short_pages": [],
+      "ocr_pages": 0,
+      "native_pages": 3,
+      "word_tables": 0,
+      "linked_pilot_questions": [],
+      "linked_rules": [],
+      "pedagogical_validation": "pending",
+      "visual_validation": "pending"
+    },
+    {
+      "id": "guide-almoufid",
+      "filename": "Guide Almoufid SVT 2AC.pdf",
+      "role": "teacher_guide",
+      "usage": "Objectifs et démarches par séquence, erreurs et remédiation, éléments de réponses liés au manuel correspondant.",
+      "extraction": {
+        "id": "guide-almoufid",
+        "status": "extracted",
+        "pages": 90,
+        "methods": {
+          "native": 87,
+          "ocr": 3
+        },
+        "pedagogical_validation": "pending"
+      },
+      "empty_or_short_pages": [],
+      "ocr_pages": 3,
+      "native_pages": 87,
+      "word_tables": 0,
+      "linked_pilot_questions": [
+        "d-a1",
+        "d-a2",
+        "d-m1",
+        "d-m2",
+        "p-a1",
+        "p-a2",
+        "p-m1",
+        "p-m2",
+        "f-a1",
+        "f-a2",
+        "f-m1",
+        "f-m2",
+        "p-open"
+      ],
+      "linked_rules": [
+        "P02"
+      ],
+      "pedagogical_validation": "pending",
+      "visual_validation": "pending"
+    },
+    {
+      "id": "guide-univers",
+      "filename": "MP_Guide_LUnivers_Plus_SVT_2AC[1945].pdf",
+      "role": "teacher_guide",
+      "usage": "Objectifs et démarches par séquence, erreurs et remédiation, éléments de réponses liés au manuel correspondant.",
+      "extraction": {
+        "id": "guide-univers",
+        "status": "extracted",
+        "pages": 82,
+        "methods": {
+          "native": 77,
+          "ocr": 5
+        },
+        "pedagogical_validation": "pending"
+      },
+      "empty_or_short_pages": [
+        7,
+        21
+      ],
+      "ocr_pages": 5,
+      "native_pages": 77,
+      "word_tables": 0,
+      "linked_pilot_questions": [],
+      "linked_rules": [
+        "P04"
+      ],
+      "pedagogical_validation": "pending",
+      "visual_validation": "pending"
+    },
+    {
+      "id": "ex-magma",
+      "filename": "Magmatisme-exercices-2.pdf",
+      "role": "exercise",
+      "usage": "Banque de tâches avec compétences, supports associés et corrigés à valider.",
+      "extraction": {
+        "id": "ex-magma",
+        "status": "extracted",
+        "pages": 2,
+        "methods": {
+          "ocr": 2
+        },
+        "pedagogical_validation": "pending"
+      },
+      "empty_or_short_pages": [],
+      "ocr_pages": 2,
+      "native_pages": 0,
+      "word_tables": 0,
+      "linked_pilot_questions": [],
+      "linked_rules": [],
+      "pedagogical_validation": "pending",
+      "visual_validation": "pending"
+    },
+    {
+      "id": "manual-naciri",
+      "filename": "Manuel des cours  2AC Internationale Pr.Naciri.pdf",
+      "role": "student_manual",
+      "usage": "Supports visuels, situations-problèmes, cours, synthèses et exercices contextualisés.",
+      "extraction": {
+        "id": "manual-naciri",
+        "status": "extracted",
+        "pages": 27,
+        "methods": {
+          "native": 27
+        },
+        "pedagogical_validation": "pending"
+      },
+      "empty_or_short_pages": [],
+      "ocr_pages": 0,
+      "native_pages": 27,
+      "word_tables": 0,
+      "linked_pilot_questions": [],
+      "linked_rules": [],
+      "pedagogical_validation": "pending",
+      "visual_validation": "pending"
+    },
+    {
+      "id": "pedagogy-ipse",
+      "filename": "Proposition Pedagogie IPSE.pdf",
+      "role": "product_pedagogy",
+      "usage": "Spécification du diagnostic, du plan, du feedback, de l’adaptation et des bilans.",
+      "extraction": {
+        "id": "pedagogy-ipse",
+        "status": "extracted",
+        "pages": 11,
+        "methods": {
+          "native": 11
+        },
+        "pedagogical_validation": "pending"
+      },
+      "empty_or_short_pages": [],
+      "ocr_pages": 0,
+      "native_pages": 11,
+      "word_tables": 0,
+      "linked_pilot_questions": [],
+      "linked_rules": [
+        "P01",
+        "P05",
+        "P07"
+      ],
+      "pedagogical_validation": "pending",
+      "visual_validation": "pending"
+    },
+    {
+      "id": "ex-seisms2",
+      "filename": "Séismes-exercices-2.pdf",
+      "role": "exercise",
+      "usage": "Banque de tâches avec compétences, supports associés et corrigés à valider.",
+      "extraction": {
+        "id": "ex-seisms2",
+        "status": "extracted",
+        "pages": 3,
+        "methods": {
+          "ocr": 3
+        },
+        "pedagogical_validation": "pending"
+      },
+      "empty_or_short_pages": [],
+      "ocr_pages": 3,
+      "native_pages": 0,
+      "word_tables": 0,
+      "linked_pilot_questions": [],
+      "linked_rules": [],
+      "pedagogical_validation": "pending",
+      "visual_validation": "pending"
+    },
+    {
+      "id": "ref-sm",
+      "filename": "Version Préfinale Programme SVT,  SM envoyée le 5 Mars 2018 .docx",
+      "role": "pedagogical_reference",
+      "usage": "Acquis observables, prérequis, niveaux expression/outils/méthodologie, grilles et évaluation ; aucun contenu lycée dans les réponses 2AC.",
+      "extraction": {
+        "id": "ref-sm",
+        "status": "extracted",
+        "blocks": 382,
+        "pedagogical_validation": "pending"
+      },
+      "empty_or_short_pages": [],
+      "ocr_pages": 0,
+      "native_pages": 0,
+      "word_tables": 33,
+      "linked_pilot_questions": [],
+      "linked_rules": [
+        "P01",
+        "P02",
+        "P03",
+        "P05",
+        "P06",
+        "P08"
+      ],
+      "pedagogical_validation": "pending",
+      "visual_validation": "pending"
+    },
+    {
+      "id": "ref-exp",
+      "filename": "Version préfinale Programme SVT, Sc Exp envoyée le 5 mars 2018.doc",
+      "role": "pedagogical_reference",
+      "usage": "Acquis observables, prérequis, niveaux expression/outils/méthodologie, grilles et évaluation ; aucun contenu lycée dans les réponses 2AC.",
+      "extraction": {
+        "id": "ref-exp",
+        "status": "extracted",
+        "blocks": 539,
+        "pedagogical_validation": "pending"
+      },
+      "empty_or_short_pages": [],
+      "ocr_pages": 0,
+      "native_pages": 0,
+      "word_tables": 88,
+      "linked_pilot_questions": [],
+      "linked_rules": [
+        "P01",
+        "P02",
+        "P03",
+        "P05",
+        "P06",
+        "P08"
+      ],
+      "pedagogical_validation": "pending",
+      "visual_validation": "pending"
+    },
+    {
+      "id": "ex-volcano2",
+      "filename": "Volcans-exercices-2.pdf",
+      "role": "exercise",
+      "usage": "Banque de tâches avec compétences, supports associés et corrigés à valider.",
+      "extraction": {
+        "id": "ex-volcano2",
+        "status": "extracted",
+        "pages": 3,
+        "methods": {
+          "ocr": 3
+        },
+        "pedagogical_validation": "pending"
+      },
+      "empty_or_short_pages": [],
+      "ocr_pages": 3,
+      "native_pages": 0,
+      "word_tables": 0,
+      "linked_pilot_questions": [],
+      "linked_rules": [],
+      "pedagogical_validation": "pending",
+      "visual_validation": "pending"
+    }
+  ]
+}

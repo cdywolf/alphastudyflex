@@ -1,0 +1,247 @@
+{
+  "subject": "SVT",
+  "level": "2AC",
+  "chapters": [
+    {
+      "id": "tectonics",
+      "title": "Tectonique des plaques",
+      "state": "pilot",
+      "unit": "geology",
+      "skills": [
+        {
+          "id": "arguments",
+          "title": "Reconnaître les arguments de la dérive",
+          "dimension": "expression",
+          "outcome": "Identifier un argument morphologique, géologique ou paléontologique.",
+          "prerequisites": [
+            "Distinguer continent et océan",
+            "Lire une légende"
+          ],
+          "success": "Identifier la nature de la preuve et ce qu’elle permet de proposer.",
+          "sources": [
+            {
+              "id": "manual-etincelle",
+              "pdf_page": 6
+            },
+            {
+              "id": "manual-etincelle",
+              "pdf_page": 7
+            },
+            {
+              "id": "guide-almoufid",
+              "pdf_page": 33
+            }
+          ]
+        },
+        {
+          "id": "graph",
+          "title": "Lire un graphique scientifique",
+          "dimension": "outils",
+          "outcome": "Lire une valeur et décrire la relation entre âge et distance à une dorsale.",
+          "prerequisites": [
+            "Lire des axes gradués",
+            "Identifier une unité"
+          ],
+          "success": "Citer des valeurs avec unités et décrire le sens de variation.",
+          "sources": [
+            {
+              "id": "manual-etincelle",
+              "pdf_page": 14
+            }
+          ]
+        },
+        {
+          "id": "movement",
+          "title": "Expliquer l’expansion océanique",
+          "dimension": "methodologie",
+          "outcome": "Relier la répartition des âges du plancher océanique au mouvement divergent.",
+          "prerequisites": [
+            "arguments",
+            "graph"
+          ],
+          "success": "Relier observation, formation de croûte et éloignement, puis justifier.",
+          "sources": [
+            {
+              "id": "manual-etincelle",
+              "pdf_page": 8
+            },
+            {
+              "id": "manual-etincelle",
+              "pdf_page": 9
+            },
+            {
+              "id": "guide-almoufid",
+              "pdf_page": 34
+            }
+          ]
+        }
+      ],
+      "lessons": [
+        {
+          "id": "arguments",
+          "title": "Des indices sur deux continents",
+          "minutes": 15,
+          "skill": "arguments",
+          "question": "Pourquoi des roches et des fossiles semblables se retrouvent-ils sur des continents aujourd’hui séparés ?",
+          "body": "Une forme de côte compatible suggère un rapprochement possible. La présence de fossiles comparables et de formations rocheuses de même âge apporte d’autres arguments. C’est leur convergence qui soutient l’hypothèse de continents autrefois réunis. Un seul indice ne suffit pas à expliquer tout le mécanisme.",
+          "observations": [
+            {
+              "label": "Formes",
+              "value": "Des marges continentales présentent une complémentarité."
+            },
+            {
+              "label": "Fossiles",
+              "value": "Des fossiles terrestres comparables sont présents de part et d’autre de l’Atlantique."
+            },
+            {
+              "label": "Roches",
+              "value": "Des formations anciennes comparables se prolongent lorsque l’on rapproche les continents."
+            }
+          ],
+          "document_type": "evidence",
+          "sources": [
+            {
+              "id": "manual-etincelle",
+              "pdf_page": 6
+            },
+            {
+              "id": "manual-etincelle",
+              "pdf_page": 7
+            },
+            {
+              "id": "guide-almoufid",
+              "pdf_page": 33
+            }
+          ],
+          "hints": [
+            "Distingue une observation de l’explication proposée.",
+            "Compare plusieurs types d’indices, pas seulement la forme des côtes."
+          ]
+        },
+        {
+          "id": "graph",
+          "title": "Le fond océanique garde une trace",
+          "minutes": 20,
+          "skill": "graph",
+          "question": "Comment l’âge du plancher océanique change-t-il lorsqu’on s’éloigne d’une dorsale ?",
+          "body": "Pour lire un graphique, commence par le titre, les axes et leurs unités. Repère ensuite les valeurs et décris leur variation avant de l’interpréter. Dans cet exemple pédagogique, les roches les plus proches de la dorsale sont les plus jeunes. L’âge augmente avec la distance.",
+          "document_type": "graph",
+          "dataset": [
+            [
+              0,
+              0
+            ],
+            [
+              200,
+              10
+            ],
+            [
+              400,
+              20
+            ],
+            [
+              600,
+              30
+            ],
+            [
+              800,
+              40
+            ]
+          ],
+          "dataset_note": "Données simplifiées créées pour cet entraînement, inspiré de la tâche de lecture de graphique du manuel ; ce ne sont pas des mesures réelles.",
+          "sources": [
+            {
+              "id": "manual-etincelle",
+              "pdf_page": 14
+            }
+          ],
+          "hints": [
+            "Quel axe porte la distance ? Quel axe porte l’âge ?",
+            "Lis deux points éloignés avant de décrire la variation."
+          ]
+        },
+        {
+          "id": "movement",
+          "title": "Une croûte qui se forme et s’éloigne",
+          "minutes": 20,
+          "skill": "movement",
+          "question": "Comment expliquer la présence des roches les plus jeunes au voisinage de la dorsale ?",
+          "body": "Une nouvelle croûte océanique se forme au niveau de la dorsale. Les plaques s’écartent et entraînent la croûte déjà formée de part et d’autre. Cela explique la présence de roches jeunes près de l’axe et plus anciennes à distance. Une plaque lithosphérique peut porter une partie océanique et une partie continentale.",
+          "document_type": "section",
+          "sources": [
+            {
+              "id": "manual-etincelle",
+              "pdf_page": 8
+            },
+            {
+              "id": "manual-etincelle",
+              "pdf_page": 9
+            },
+            {
+              "id": "guide-almoufid",
+              "pdf_page": 34
+            }
+          ],
+          "hints": [
+            "Où se trouvent les roches les plus jeunes ?",
+            "Relie la formation de nouvelle croûte à l’écartement des plaques."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seisms",
+      "title": "Les séismes",
+      "state": "planned",
+      "unit": "geology"
+    },
+    {
+      "id": "volcanoes",
+      "title": "Le volcanisme",
+      "state": "planned",
+      "unit": "geology"
+    },
+    {
+      "id": "magmatism",
+      "title": "Les roches magmatiques",
+      "state": "planned",
+      "unit": "geology"
+    },
+    {
+      "id": "deformations",
+      "title": "Les déformations tectoniques",
+      "state": "planned",
+      "unit": "geology"
+    },
+    {
+      "id": "mountains",
+      "title": "Les chaînes de montagnes",
+      "state": "planned",
+      "unit": "geology"
+    },
+    {
+      "id": "animals",
+      "title": "La reproduction animale",
+      "state": "planned",
+      "unit": "biology"
+    },
+    {
+      "id": "plants",
+      "title": "La reproduction végétale",
+      "state": "planned",
+      "unit": "biology"
+    },
+    {
+      "id": "human-reproduction",
+      "title": "La reproduction humaine",
+      "state": "planned",
+      "unit": "biology"
+    },
+    {
+      "id": "heredity",
+      "title": "L’hérédité humaine",
+      "state": "planned",
+      "unit": "biology"
+    }
+  ]
+}

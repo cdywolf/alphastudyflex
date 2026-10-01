@@ -1,0 +1,713 @@
+[
+  {
+    "id": "d-a1",
+    "version": 1,
+    "chapter": "tectonics",
+    "mode": "diagnostic",
+    "skill": "arguments",
+    "dimension": "expression",
+    "kind": "choice",
+    "prompt": "Des fossiles terrestres comparables sont retrouvés en Afrique et en Amérique du Sud. De quel type d’argument s’agit-il ?",
+    "choices": [
+      "Morphologique",
+      "Paléontologique",
+      "Climatique"
+    ],
+    "answer": 1,
+    "explanation": "Les fossiles constituent un argument paléontologique.",
+    "hints": [
+      "Quel domaine étudie les fossiles ?"
+    ],
+    "document": null,
+    "sources": [
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 6
+      },
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 7
+      },
+      {
+        "id": "guide-almoufid",
+        "pdf_page": 33
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote, à valider par un enseignant."
+  },
+  {
+    "id": "d-a2",
+    "version": 1,
+    "chapter": "tectonics",
+    "mode": "diagnostic",
+    "skill": "arguments",
+    "dimension": "expression",
+    "kind": "choice",
+    "prompt": "Quelle observation constitue un argument morphologique ?",
+    "choices": [
+      "La complémentarité de certaines marges continentales",
+      "La température des océans",
+      "Le nombre de volcans actifs"
+    ],
+    "answer": 0,
+    "explanation": "La morphologie concerne ici la forme des continents.",
+    "hints": [
+      "Pense au sens du mot « forme »."
+    ],
+    "document": null,
+    "sources": [
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 6
+      },
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 7
+      },
+      {
+        "id": "guide-almoufid",
+        "pdf_page": 33
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote, à valider par un enseignant."
+  },
+  {
+    "id": "d-g1",
+    "version": 1,
+    "chapter": "tectonics",
+    "mode": "diagnostic",
+    "skill": "graph",
+    "dimension": "outils",
+    "kind": "choice",
+    "prompt": "Dans ce graphique d’entraînement, quel est l’âge à 400 km de la dorsale ?",
+    "choices": [
+      "10 Ma",
+      "20 Ma",
+      "40 Ma"
+    ],
+    "answer": 1,
+    "explanation": "À la distance 400 km correspond un âge de 20 millions d’années.",
+    "hints": [
+      "Pars de 400 sur l’axe horizontal et remonte jusqu’au point."
+    ],
+    "document": "graph",
+    "sources": [
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 14
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote, à valider par un enseignant."
+  },
+  {
+    "id": "d-g2",
+    "version": 1,
+    "chapter": "tectonics",
+    "mode": "diagnostic",
+    "skill": "graph",
+    "dimension": "outils",
+    "kind": "choice",
+    "prompt": "Quelle grandeur est représentée sur l’axe horizontal ?",
+    "choices": [
+      "L’âge en Ma",
+      "La profondeur en km",
+      "La distance à la dorsale en km"
+    ],
+    "answer": 2,
+    "explanation": "L’axe horizontal indique la distance à l’axe de la dorsale.",
+    "hints": [
+      "Lis la légende de l’axe horizontal."
+    ],
+    "document": "graph",
+    "sources": [
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 14
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote, à valider par un enseignant."
+  },
+  {
+    "id": "d-m1",
+    "version": 1,
+    "chapter": "tectonics",
+    "mode": "diagnostic",
+    "skill": "movement",
+    "dimension": "methodologie",
+    "kind": "choice",
+    "prompt": "Au niveau d’une dorsale océanique, les deux plaques…",
+    "choices": [
+      "s’écartent",
+      "restent immobiles",
+      "se superposent toujours"
+    ],
+    "answer": 0,
+    "explanation": "La dorsale correspond à une limite divergente.",
+    "hints": [
+      "La divergence signifie un éloignement."
+    ],
+    "document": null,
+    "sources": [
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 8
+      },
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 9
+      },
+      {
+        "id": "guide-almoufid",
+        "pdf_page": 34
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote, à valider par un enseignant."
+  },
+  {
+    "id": "d-m2",
+    "version": 1,
+    "chapter": "tectonics",
+    "mode": "diagnostic",
+    "skill": "movement",
+    "dimension": "methodologie",
+    "kind": "choice",
+    "prompt": "Pourquoi les roches proches de l’axe d’une dorsale sont-elles généralement les plus jeunes ?",
+    "choices": [
+      "Les vieilles roches y rajeunissent",
+      "Une nouvelle croûte s’y forme",
+      "La distance change leur âge"
+    ],
+    "answer": 1,
+    "explanation": "La croûte se forme à la dorsale puis s’en éloigne.",
+    "hints": [
+      "Où la nouvelle croûte apparaît-elle ?"
+    ],
+    "document": null,
+    "sources": [
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 8
+      },
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 9
+      },
+      {
+        "id": "guide-almoufid",
+        "pdf_page": 34
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote, à valider par un enseignant."
+  },
+  {
+    "id": "p-a1",
+    "version": 1,
+    "chapter": "tectonics",
+    "mode": "practice",
+    "skill": "arguments",
+    "dimension": "expression",
+    "kind": "choice",
+    "prompt": "On rapproche deux continents et des formations rocheuses de même âge se prolongent. L’argument est…",
+    "choices": [
+      "géologique",
+      "paléontologique",
+      "uniquement géométrique"
+    ],
+    "answer": 0,
+    "explanation": "La nature et l’âge des roches apportent un argument géologique.",
+    "hints": [
+      "Observe ce qui est comparé : des roches."
+    ],
+    "document": null,
+    "sources": [
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 6
+      },
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 7
+      },
+      {
+        "id": "guide-almoufid",
+        "pdf_page": 33
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote, à valider par un enseignant."
+  },
+  {
+    "id": "p-a2",
+    "version": 1,
+    "chapter": "tectonics",
+    "mode": "practice",
+    "skill": "arguments",
+    "dimension": "expression",
+    "kind": "choice",
+    "prompt": "Pour soutenir une hypothèse sur l’ancienne position des continents, on doit…",
+    "choices": [
+      "utiliser seulement leur nom",
+      "croiser des indices indépendants",
+      "ignorer les fossiles"
+    ],
+    "answer": 1,
+    "explanation": "Plusieurs observations concordantes renforcent l’argumentation.",
+    "hints": [
+      "La forme, les fossiles et les roches peuvent se compléter."
+    ],
+    "document": null,
+    "sources": [
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 6
+      },
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 7
+      },
+      {
+        "id": "guide-almoufid",
+        "pdf_page": 33
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote, à valider par un enseignant."
+  },
+  {
+    "id": "p-g1",
+    "version": 1,
+    "chapter": "tectonics",
+    "mode": "practice",
+    "skill": "graph",
+    "dimension": "outils",
+    "kind": "choice",
+    "prompt": "Quel âge lit-on à 600 km ?",
+    "choices": [
+      "20 Ma",
+      "30 Ma",
+      "60 Ma"
+    ],
+    "answer": 1,
+    "explanation": "Le point situé à 600 km correspond à 30 Ma.",
+    "hints": [
+      "Repère l’intersection avec le point de la série."
+    ],
+    "document": "graph",
+    "sources": [
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 14
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote, à valider par un enseignant."
+  },
+  {
+    "id": "p-g2",
+    "version": 1,
+    "chapter": "tectonics",
+    "mode": "practice",
+    "skill": "graph",
+    "dimension": "outils",
+    "kind": "choice",
+    "prompt": "Quelle description correspond aux données ?",
+    "choices": [
+      "L’âge diminue avec la distance",
+      "L’âge est constant",
+      "L’âge augmente avec la distance"
+    ],
+    "answer": 2,
+    "explanation": "La série monte lorsque la distance augmente.",
+    "hints": [
+      "Compare le point à 200 km et celui à 800 km."
+    ],
+    "document": "graph",
+    "sources": [
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 14
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote, à valider par un enseignant."
+  },
+  {
+    "id": "p-m1",
+    "version": 1,
+    "chapter": "tectonics",
+    "mode": "practice",
+    "skill": "movement",
+    "dimension": "methodologie",
+    "kind": "choice",
+    "prompt": "Une plaque lithosphérique peut-elle porter à la fois un continent et une partie océanique ?",
+    "choices": [
+      "Oui",
+      "Non, une plaque est toujours un continent",
+      "Non, une plaque est toujours un océan"
+    ],
+    "answer": 0,
+    "explanation": "Les frontières des plaques ne coïncident pas toujours avec les contours des continents.",
+    "hints": [
+      "La plaque et le continent sont deux notions différentes."
+    ],
+    "document": null,
+    "sources": [
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 8
+      },
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 9
+      },
+      {
+        "id": "guide-almoufid",
+        "pdf_page": 34
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote, à valider par un enseignant."
+  },
+  {
+    "id": "p-m2",
+    "version": 1,
+    "chapter": "tectonics",
+    "mode": "practice",
+    "skill": "movement",
+    "dimension": "methodologie",
+    "kind": "choice",
+    "prompt": "Une nouvelle croûte apparaît à la dorsale. Que devient la croûte déjà formée lorsque les plaques divergent ?",
+    "choices": [
+      "Elle reste toujours au même endroit",
+      "Elle s’éloigne de l’axe",
+      "Elle perd son âge"
+    ],
+    "answer": 1,
+    "explanation": "L’écartement entraîne la croûte de part et d’autre de la dorsale.",
+    "hints": [
+      "Relie « divergence » et déplacement."
+    ],
+    "document": null,
+    "sources": [
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 8
+      },
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 9
+      },
+      {
+        "id": "guide-almoufid",
+        "pdf_page": 34
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote, à valider par un enseignant."
+  },
+  {
+    "id": "f-a1",
+    "version": 1,
+    "chapter": "tectonics",
+    "mode": "final",
+    "skill": "arguments",
+    "dimension": "expression",
+    "kind": "choice",
+    "prompt": "La présence des mêmes fossiles anciens sur deux continents aujourd’hui séparés soutient l’hypothèse…",
+    "choices": [
+      "d’un rapprochement passé de ces continents",
+      "que tous les fossiles traversent les océans",
+      "que les continents sont immobiles"
+    ],
+    "answer": 0,
+    "explanation": "La répartition des fossiles apporte un indice sur la position passée des continents.",
+    "hints": [
+      ""
+    ],
+    "document": null,
+    "sources": [
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 6
+      },
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 7
+      },
+      {
+        "id": "guide-almoufid",
+        "pdf_page": 33
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote, à valider par un enseignant."
+  },
+  {
+    "id": "f-a2",
+    "version": 1,
+    "chapter": "tectonics",
+    "mode": "final",
+    "skill": "arguments",
+    "dimension": "expression",
+    "kind": "choice",
+    "prompt": "Quel couple associe correctement une observation à son argument ?",
+    "choices": [
+      "Fossiles — morphologique",
+      "Roches de même âge — géologique",
+      "Forme des côtes — paléontologique"
+    ],
+    "answer": 1,
+    "explanation": "La comparaison des formations rocheuses est un argument géologique.",
+    "hints": [
+      ""
+    ],
+    "document": null,
+    "sources": [
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 6
+      },
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 7
+      },
+      {
+        "id": "guide-almoufid",
+        "pdf_page": 33
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote, à valider par un enseignant."
+  },
+  {
+    "id": "f-g1",
+    "version": 1,
+    "chapter": "tectonics",
+    "mode": "final",
+    "skill": "graph",
+    "dimension": "outils",
+    "kind": "choice",
+    "prompt": "À quelle distance lit-on un âge de 10 Ma dans ce graphique ?",
+    "choices": [
+      "200 km",
+      "400 km",
+      "800 km"
+    ],
+    "answer": 0,
+    "explanation": "Le point de 10 Ma se situe à 200 km de la dorsale.",
+    "hints": [
+      ""
+    ],
+    "document": "graph",
+    "sources": [
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 14
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote, à valider par un enseignant."
+  },
+  {
+    "id": "f-g2",
+    "version": 1,
+    "chapter": "tectonics",
+    "mode": "final",
+    "skill": "graph",
+    "dimension": "outils",
+    "kind": "choice",
+    "prompt": "Quel énoncé décrit les points à 200 km et 800 km ?",
+    "choices": [
+      "L’âge passe de 10 à 40 Ma",
+      "L’âge passe de 40 à 10 Ma",
+      "L’âge reste égal à 20 Ma"
+    ],
+    "answer": 0,
+    "explanation": "Il faut citer les deux valeurs, avec leurs unités.",
+    "hints": [
+      ""
+    ],
+    "document": "graph",
+    "sources": [
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 14
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote, à valider par un enseignant."
+  },
+  {
+    "id": "f-m1",
+    "version": 1,
+    "chapter": "tectonics",
+    "mode": "final",
+    "skill": "movement",
+    "dimension": "methodologie",
+    "kind": "choice",
+    "prompt": "Quelle succession explique l’expansion océanique ?",
+    "choices": [
+      "Formation de croûte à la dorsale, puis éloignement",
+      "Vieillissement des roches, puis disparition des continents",
+      "Arrêt des plaques, puis formation de l’océan"
+    ],
+    "answer": 0,
+    "explanation": "La formation de croûte à l’axe et l’écartement des plaques expliquent l’expansion.",
+    "hints": [
+      ""
+    ],
+    "document": null,
+    "sources": [
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 8
+      },
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 9
+      },
+      {
+        "id": "guide-almoufid",
+        "pdf_page": 34
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote, à valider par un enseignant."
+  },
+  {
+    "id": "f-m2",
+    "version": 1,
+    "chapter": "tectonics",
+    "mode": "final",
+    "skill": "movement",
+    "dimension": "methodologie",
+    "kind": "choice",
+    "prompt": "Des roches de plus en plus anciennes de part et d’autre d’une dorsale sont cohérentes avec…",
+    "choices": [
+      "une absence de mouvement",
+      "un renouvellement à l’axe et un écartement",
+      "un rajeunissement à distance"
+    ],
+    "answer": 1,
+    "explanation": "La répartition des âges est cohérente avec la formation à l’axe et l’éloignement.",
+    "hints": [
+      ""
+    ],
+    "document": null,
+    "sources": [
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 8
+      },
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 9
+      },
+      {
+        "id": "guide-almoufid",
+        "pdf_page": 34
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote, à valider par un enseignant."
+  },
+  {
+    "id": "p-open",
+    "version": 1,
+    "chapter": "tectonics",
+    "mode": "practice",
+    "skill": "movement",
+    "dimension": "methodologie",
+    "kind": "open",
+    "prompt": "Explique en quelques phrases pourquoi l’âge des roches augmente lorsqu’on s’éloigne de la dorsale. Utilise une observation et un mécanisme.",
+    "choices": [],
+    "answer": null,
+    "explanation": "Une observation doit être reliée à un mécanisme : des roches plus jeunes près de l’axe, la formation de croûte à la dorsale et l’éloignement des plaques.",
+    "hints": [
+      "Commence par décrire la répartition des âges.",
+      "Indique ensuite où se forme la croûte et comment elle se déplace."
+    ],
+    "document": "graph",
+    "sources": [
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 8
+      },
+      {
+        "id": "manual-etincelle",
+        "pdf_page": 9
+      },
+      {
+        "id": "guide-almoufid",
+        "pdf_page": 34
+      }
+    ],
+    "criteria": [
+      "0 : explication absente ou incompatible avec les observations.",
+      "1 : observation correcte ou mécanisme correct, mais relation incomplète.",
+      "2 : observation correcte reliée à la formation de croûte et à son éloignement."
+    ],
+    "status": "draft",
+    "authorship": "Question originale du pilote, correction humaine obligatoire."
+  }
+]
