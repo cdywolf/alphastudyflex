@@ -219,5 +219,18 @@
     "student_retrieval_allowed": true,
     "validation": "pending",
     "pedagogical_usage": "Banque de tâches avec compétences, supports associés et corrigés à valider."
+  },
+  {
+    "id": "ex-volcano-corrige",
+    "filename": "exercices volcans.pdf",
+    "role": "exercise",
+    "level": "2AC",
+    "subject": "SVT",
+    "chapter": "volcanoes",
+    "pages": 4,
+    "sha256": "6f27366ec7664c6b8ac2714840eb7130d6d5016e25c9149fba16a21596a7e6c6",
+    "student_retrieval_allowed": true,
+    "validation": "pending",
+    "pedagogical_usage": "Exercices de restitution et de raisonnement sur le volcanisme avec corrections (pages 3-4), à valider."
   }
 ]

@@ -55,6 +55,10 @@ def initialize():
         else:db.execute('PRAGMA journal_mode=WAL')
         db.executescript(schema)
         db.execute('INSERT INTO schema_versions(version) VALUES(1) ON CONFLICT(version) DO NOTHING')
+        # Version 2 : un parcours appartient à un chapitre ; les parcours existants restent en tectonique.
+        if not db.execute('SELECT version FROM schema_versions WHERE version=2').fetchone():
+            db.execute("ALTER TABLE runs ADD COLUMN chapter TEXT NOT NULL DEFAULT 'tectonics'")
+            db.execute('INSERT INTO schema_versions(version) VALUES(2)')
 
 SCHEMA = r"""
 

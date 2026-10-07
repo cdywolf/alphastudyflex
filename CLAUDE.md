@@ -46,7 +46,7 @@ Code : ce dépôt. Pilotage : `docs/pilotage/`. Corpus extrait (hors dépôt, dr
 - Le dossier partagé ne conserve pas le bit exécutable : lancer les scripts avec `bash script.sh`.
 - Extraction : `bash tools/extract_pages.sh <Dxx> <pdf> corpus/pages` (idempotente, reprend où elle s'est arrêtée).
 
-## Code existant (MVP 0.1.1)
+## Code existant (0.2.0)
 - `docs/ARCHITECTURE.md` décrit le code actuel ; `docs/pilotage/ARCHITECTURE.md` décrit la cible proposée.
-- Tests : `python -m pytest -q` (13 tests au 2026-10-07). Lancement : voir README.md.
+- Tests : `python -m pytest -q` (19 tests au 2026-10-07, SQLite et PostgreSQL). Lancement : voir README.md.
 - Audit de reprise : `docs/pilotage/AUDIT_MVP_0.1.1.md`.

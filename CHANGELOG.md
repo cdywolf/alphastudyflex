@@ -1,3 +1,13 @@
+# 0.2.0 — Chapitre Volcanisme (2026-10-07)
+
+- Deuxième chapitre pilote : le volcanisme, avec 3 compétences, 3 séances et 20 questions (6 de diagnostic, 8 d’entraînement dont une réponse rédigée, 6 de bilan). Toutes sont en brouillon : la validation enseignant reste à faire.
+- Nouvelle source déclarée : corrigé d’exercices sur les volcans (18 sources).
+- Serveur multi-chapitres : diagnostic, séances, bilan, tableau de bord et préparation calculés par chapitre ; les tentatives portent leur chapitre (migration de schéma 2, les tentatives existantes restent en tectonique).
+- Prérequis entre chapitres signalés à l’élève, jamais imposés.
+- Schéma original d’une coupe de volcan, numéroté ; sa description accessible ne donne pas les réponses.
+- Les identifiants de questions, séances et règles de la tectonique sont inchangés : les validations déjà publiées restent valides.
+- Correctif : le motif de l’identifiant de connexion était refusé par les navigateurs récents.
+
 # 0.1.1 — Encodage Windows
 
 - Lecture et écriture UTF-8 explicites pour les contenus pédagogiques et le corpus.

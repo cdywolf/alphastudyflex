@@ -33,9 +33,10 @@ Aucune durée n'est annoncée avant analyse.
 | T-008 | Items de diagnostic + barème + erreurs fréquentes | Mesure éducative | T-007 | T-007 | banque d'items sourcée | items non standardisés | marqués « non standardisé » ; revue enseignant | implémenté v0.1 (13 items, `pedagogy/volcanisme/diagnostic_items.yaml`), non validé ; 4 médias à produire |
 | T-009 | Proposition d'architecture comparée | Architecte | brief | — | `ARCHITECTURE.md` v1 | — | options comparées, décision Candy | proposé |
 | T-010 | Vérification doc officielle API Claude (modalités, tarifs, données) | IA/RAG | — | — | note datée dans `ARCHITECTURE.md` | évolution tarifs | sources officielles citées | partiel (tarifs notés ; modalités audio/vidéo à vérifier au J2) |
-| T-011 | Créer dépôt privé `cdywolf/alphastudyflex` et migrer | DevOps | DEC-010 | Candy : connecter GitHub + créer le dépôt vide | dépôt + CI | — | dépôt attaché à la session | bloqué (GitHub non connecté) |
+| T-011 | Créer dépôt privé `cdywolf/alphastudyflex` et migrer | DevOps | DEC-010 | Candy : connecter GitHub + créer le dépôt vide | dépôt + CI | — | dépôt attaché à la session | terminé (dépôt existant connecté le 2026-10-07 ; MVP 0.1.1 repris, DEC-015) |
 | T-012 | Fixer le plafond de dépense API pour la phase démo | Candy | DEC-009 | — | montant en $/mois dans DECISIONS | — | décision consignée | terminé (DEC-014 : 25 $/mois) |
-| T-013 | Hébergement gratuit (Render + Supabase) : comptes, projets | Candy + DevOps | DEC-013 | J2 | URL de démo | veille des offres gratuites | démo accessible | à faire |
+| T-013 | Hébergement gratuit (Render + Neon, DEC-015) : comptes, projets | Candy + DevOps | DEC-013, DEC-015 | accord de Candy pour déployer | URL de démo | veille des offres gratuites | démo accessible | à faire |
+| T-014 | Chapitre Volcanisme dans le code (0.2.0) : serveur multi-chapitres, 3 séances, 20 questions, schéma original | Dév. + Concepteur pédagogique | T-008, DEC-015 | dépôt connecté | branche `claude/pilotage-et-volcanisme` + pull request | 19 tests SQLite et PostgreSQL, `check_content.py`, essai navigateur | revue de code, puis validation enseignant des 20 questions | testé (pas validé enseignant, pas déployé) |
 
 ## Backlog futur (aucun travail actif)
 - F-001 Extension physique-chimie (sources, critères, validations propres) — après décision Candy.
