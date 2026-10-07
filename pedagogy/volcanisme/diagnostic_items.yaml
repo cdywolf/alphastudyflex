@@ -1,0 +1,133 @@
+# Banque d'items de diagnostic — tranche Volcanisme (T-008)
+# Statut : PROPOSÉ — évaluation maison NON STANDARDISÉE, aucune norme ni seuil scientifique.
+# Rédaction originale (pas de copie des manuels) ; chaque item cite la source qui fonde la réponse attendue.
+# À faire relire par l'enseignant référent avant tout usage élève.
+# Règle de lecture des résultats : un item réussi = indice de maîtrise, pas une preuve ; au moins 2 items
+# concordants par compétence avant de proposer une adaptation ; « non évalué » si < 2 items passés.
+
+meta:
+  version: 0.1
+  date: 2026-10-07
+  duree_cible_minutes: 15
+  confiance_declaree: "Après chaque item : « Es-tu sûr(e) ? » (sûr / pas sûr / j'ai deviné). Sert à repérer les connaissances fragiles ; jamais noté."
+  alternatives_accessibilite: "Tout item à image a une description textuelle ; glisser-déposer utilisable au clavier ; lecture audio de l'énoncé à la demande (pas d'autoplay)."
+
+items:
+  # ---- Prérequis : tectonique des plaques ----
+  - id: DV-01
+    cible: [P2]
+    format: qcm
+    enonce: "Au niveau d'une dorsale océanique, les deux plaques…"
+    choix: ["se rapprochent", "s'écartent", "glissent l'une sous l'autre", "ne bougent pas"]
+    reponse: 1
+    erreurs_visees: {2: M6}
+    source_reponse: [D17 p010, D13 p045]
+    bareme: "1 point"
+  - id: DV-02
+    cible: [P2]
+    format: qcm
+    enonce: "Dans une zone de subduction, que se passe-t-il ?"
+    choix: ["Une plaque océanique plonge sous une autre plaque", "Deux plaques s'écartent", "Une nouvelle croûte océanique se forme", "Aucun mouvement n'a lieu"]
+    reponse: 0
+    erreurs_visees: {1: M6, 2: M6}
+    source_reponse: [D11 p044, D13 p047]
+    bareme: "1 point"
+  - id: DV-03
+    cible: [P1]
+    format: carte_cliquable
+    enonce: "Sur la carte, clique sur une limite entre deux plaques."
+    media_requis: "Carte des plaques lithosphériques — à produire ou à obtenir sous licence ouverte (aucune figure des manuels réutilisée)."
+    reponse: "zone de tolérance le long d'une limite de plaque"
+    source_reponse: [D17 p009]
+    bareme: "1 point"
+  - id: DV-04
+    cible: [P3]
+    format: qcm
+    enonce: "Qu'est-ce qui fait bouger les plaques lithosphériques ?"
+    choix: ["Les marées", "Les courants de convection dans le manteau", "Les séismes", "La rotation de la Lune"]
+    reponse: 1
+    source_reponse: [D17 p010]
+    bareme: "1 point"
+
+  # ---- Volcanisme ----
+  - id: DV-05
+    cible: [K2]
+    format: vrai_faux
+    enonce: "Le magma se forme dans la cheminée du volcan."
+    reponse: faux
+    erreurs_visees: {vrai: M1}
+    source_reponse: [D12 p035 q4, D02 p003]
+    bareme: "1 point"
+  - id: DV-06
+    cible: [K1]
+    format: vrai_faux
+    enonce: "La lave et le magma sont exactement la même chose."
+    reponse: faux
+    erreurs_visees: {vrai: M3}
+    source_reponse: [D18 p016]
+    bareme: "1 point"
+  - id: DV-07
+    cible: [C1]
+    format: legende_glisser_deposer
+    enonce: "Place les étiquettes sur la coupe du volcan : cratère, cheminée, chambre magmatique, cône, coulée de lave."
+    media_requis: "Coupe schématique d'un volcan — à dessiner (original) puis faire valider par l'enseignant."
+    reponse: "5 étiquettes à leur zone"
+    source_reponse: [D18 p015, D10 p002]
+    bareme: "1 point par étiquette correcte (sur 5) ; maîtrise si ≥ 4/5 (seuil de travail, non normé)"
+  - id: DV-08
+    cible: [C2]
+    format: remise_en_ordre
+    enonce: "Remets les étapes dans l'ordre."
+    elements: ["Fusion partielle de roches en profondeur", "Le magma s'accumule dans une chambre magmatique", "Le magma monte vers la surface", "La lave s'écoule puis refroidit"]
+    reponse: [0, 1, 2, 3]
+    source_reponse: [D02 p003 B, D12 p035 q4]
+    bareme: "1 point si ordre entièrement correct ; analyse des inversions pour le diagnostic"
+  - id: DV-09
+    cible: [K5]
+    format: qcm
+    enonce: "Un magma très visqueux qui retient beaucoup de gaz donne plutôt…"
+    choix: ["une éruption effusive", "une éruption explosive", "aucune éruption", "un séisme mais pas d'éruption"]
+    reponse: 1
+    erreurs_visees: {0: M2}
+    source_reponse: [D12 p036 q5]
+    bareme: "1 point"
+  - id: DV-10
+    cible: [C3]
+    format: comparaison_documents
+    enonce: "Regarde les deux courts extraits d'éruption. Lequel est effusif ? Donne deux indices observés."
+    media_requis: "Deux vidéos courtes sous licence libre (une effusive, une explosive), sous-titrées et décrites — à sélectionner et faire valider."
+    reponse: "Effusif identifié + 2 indices parmi : coulée fluide, peu d'explosions, peu de cendres, lave qui s'écoule"
+    source_reponse: [D12 p036 q4, D13 p047]
+    bareme: "1 point identification + 1 point par indice pertinent (max 3)"
+    alternative_textuelle: "Descriptions écrites des deux éruptions."
+  - id: DV-11
+    cible: [C5]
+    format: association
+    enonce: "Associe chaque contexte au type de volcanisme le plus fréquent."
+    paires: {"Dorsale océanique": "volcanisme effusif, basalte en coussins", "Zone de subduction": "volcanisme explosif"}
+    erreurs_visees: {inversion: M6}
+    source_reponse: [D13 p047, D11 p044]
+    bareme: "1 point par paire (sur 2)"
+  - id: DV-12
+    cible: [C6, C5]
+    format: reponse_ouverte_ecrite_ou_orale
+    enonce: "Explique en 2 ou 3 phrases pourquoi on trouve beaucoup de volcans autour de l'océan Pacifique."
+    reponse_attendue_elements: ["zones de subduction autour du Pacifique", "plongée d'une plaque océanique", "fusion partielle → magma", "volcanisme explosif"]
+    source_reponse: [D13 p045, D13 p047, D11 p044]
+    bareme: "1 point par élément présent (max 4). Correction par grille ; correction IA seulement après calibrage sur corrections humaines. Oral : la prononciation et la qualité audio ne sont pas évaluées."
+  - id: DV-13
+    cible: [C7]
+    format: qcm_justifie
+    enonce: "Quelle éruption est en général la plus dangereuse pour les habitants proches ? Justifie."
+    choix: ["effusive", "explosive"]
+    reponse: 1
+    justification_attendue: "projections, cendres, nuées ardentes sur de grandes distances"
+    erreurs_visees: {0: M7}
+    source_reponse: [D02 p004 ex.2 q3]
+    bareme: "1 point choix + 1 point justification"
+
+regles_diagnostic:   # règles explicites et auditables (pas de modèle statistique à ce stade)
+  - "Prérequis P1-P4 : si ≥ 2 items prérequis échoués, proposer d'abord une reprise de la tectonique des plaques (plan soumis à l'enseignant)."
+  - "Erreur M1-M7 déclenchée 2 fois ou plus : proposer la remédiation ciblée correspondante (exemple résolu + question de vérification)."
+  - "Réponse réussie avec « j'ai deviné » : statut « incertain », à revoir lors d'une révision espacée."
+  - "Toute conclusion affichée à l'enseignant indique : items passés, réponses, confiance déclarée, données manquantes, date de réévaluation."

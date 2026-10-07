@@ -7,9 +7,10 @@ La base est SQLite pour l’exécution locale et PostgreSQL via psycopg lorsque 
 ## Responsabilités
 
 - `content/` : version du curriculum, des questions, des sources et des règles. Modifier un contenu exige une nouvelle validation.
-- `app/engine.py` : statuts descriptifs, preuves, prise en compte des indices et ordre du plan avec prérequis.
+- `app/engine.py` : statuts descriptifs, preuves, prise en compte des indices et ordre du plan avec prérequis, par chapitre ; les prérequis d’un autre chapitre sont signalés, pas imposés.
 - `app/main.py` : routes, droits, validation des entrées et orchestration.
-- `app/db.py` : schéma version 1 et accès aux deux moteurs.
+- `app/content.py` : chapitres pilotes (état `pilot` dans le curriculum), compétences et séances indexées globalement, empreinte de révision par question, préparation d’un chapitre.
+- `app/db.py` : schéma version 2 (colonne `chapter` sur les tentatives, migration idempotente) et accès aux deux moteurs.
 - `tools/ingest.py` : traitement local des originaux avec reprise, empreinte et statut.
 - `tools/sync_corpus.py` : import des résultats dans la base distante.
 

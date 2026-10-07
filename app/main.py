@@ -10,15 +10,15 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel,Field,ConfigDict,StrictInt,StrictStr
 from .db import ROOT,data_dir,connect,initialize
 from .auth import create_user,verify_password,current_user,teacher,hash_password
-from .content import QUESTIONS,QMAP,CURRICULUM,RULES,SOURCES,SKILLS,revision,public_question,ready,is_published
-from .engine import evidence,plan,run_result
+from .content import QUESTIONS,QMAP,CURRICULUM,RULES,SOURCES,SKILLS,PILOT_CHAPTERS,CHAPTER_IDS,DEFAULT_CHAPTER,SKILL_CHAPTER,LESSONS,chapter_skills,chapter_questions,revision,public_question,ready,is_published
+from .engine import evidence,plan,run_result,prerequisite_alerts
 
 @asynccontextmanager
 async def lifespan(app):
     if (os.environ.get('RENDER') or os.environ.get('ASF_ENV')=='production') and os.environ.get('ASF_SECURE_COOKIE')!='1':
         raise RuntimeError('ASF_SECURE_COOKIE=1 est obligatoire en hébergement HTTPS.')
     initialize();yield
-app=FastAPI(title='AlphaStudyFlex',version='0.1.1',lifespan=lifespan)
+app=FastAPI(title='AlphaStudyFlex',version='0.2.0',lifespan=lifespan)
 
 @app.middleware('http')
 async def request_security(request,call_next):
@@ -38,7 +38,7 @@ class StrictModel(BaseModel):model_config=ConfigDict(extra='forbid')
 class Credentials(StrictModel):username:str=Field(min_length=3,max_length=40);password:str=Field(min_length=10,max_length=128)
 class Setup(Credentials):setup_token:str=Field(min_length=24,max_length=256)
 class Profile(StrictModel):goal:str=Field(default='',max_length=250);minutes:int=Field(default=20,ge=10,le=60)
-class Start(StrictModel):mode:Literal['diagnostic','practice','final'];skill:Literal['arguments','graph','movement']|None=None
+class Start(StrictModel):mode:Literal['diagnostic','practice','final'];chapter:str=Field(default=DEFAULT_CHAPTER,max_length=40);skill:str|None=Field(default=None,max_length=40)
 class Answer(StrictModel):question_id:str;response:StrictInt|StrictStr
 class Hint(StrictModel):question_id:str
 class Publish(StrictModel):confirmed:bool;note:str=Field(min_length=5,max_length=1000)
@@ -55,7 +55,7 @@ def rate_limit(request):
     recent.append(now)
 
 @app.get('/api/health')
-def health():return {'status':'ok','version':'0.1.1','tutor':'curated','scope':'local_pilot'}
+def health():return {'status':'ok','version':'0.2.0','tutor':'curated','scope':'local_pilot','chapters':CHAPTER_IDS}
 @app.post('/api/setup')
 def setup_teacher(body:Setup,request:Request):
     import re
@@ -100,25 +100,37 @@ def logout(request:Request):
     response=JSONResponse({'ok':True});response.delete_cookie('asf_session');return response
 @app.get('/api/me')
 def me(user=Depends(current_user)):return user
+def pilot_chapter(chapter):
+    if chapter not in CHAPTER_IDS:raise HTTPException(404,'Chapitre introuvable ou pas encore ouvert.')
+    return chapter
 @app.get('/api/dashboard')
-def dashboard(user=Depends(current_user)):
+def dashboard(chapter:str=DEFAULT_CHAPTER,user=Depends(current_user)):
+    chapter=pilot_chapter(chapter)
     with connect() as db:
-        runs=db.execute('SELECT * FROM runs WHERE user_id=? ORDER BY created_at,id',(user['id'],)).fetchall()
+        runs=db.execute('SELECT * FROM runs WHERE user_id=? AND chapter=? ORDER BY created_at,id',(user['id'],chapter)).fetchall()
+        active=db.execute('SELECT id,mode,chapter FROM runs WHERE user_id=? AND completed=0',(user['id'],)).fetchone()
         profile=db.execute('SELECT goal,minutes FROM profiles WHERE user_id=?',(user['id'],)).fetchone()
-        return dict(user=user,ready=ready(db),profile=dict(profile) if profile else {'goal':'Comprendre la tectonique des plaques','minutes':20},skills=evidence(db,user['id']),plan=plan(db,user['id']),runs=[run_result(db,r) if r['completed'] else {'id':r['id'],'mode':r['mode'],'completed':False} for r in runs],chapters=[{k:v for k,v in c.items() if k not in ['skills','lessons']} for c in CURRICULUM['chapters']])
+        current=next(c for c in PILOT_CHAPTERS if c['id']==chapter)
+        return dict(user=user,chapter={k:v for k,v in current.items() if k not in ['skills','lessons']},ready=ready(db,chapter),
+            pilot_chapters=[{'id':c['id'],'title':c['title'],'unit':c['unit'],'ready':ready(db,c['id'])} for c in PILOT_CHAPTERS],
+            active_elsewhere=dict(active) if active and active['chapter']!=chapter else None,
+            profile=dict(profile) if profile else {'goal':'Comprendre la géologie interne de la Terre','minutes':20},skills=evidence(db,user['id'],chapter),plan=plan(db,user['id'],chapter),
+            prerequisite_alerts=prerequisite_alerts(db,user['id'],chapter),
+            runs=[run_result(db,r) if r['completed'] else {'id':r['id'],'mode':r['mode'],'completed':False} for r in runs],chapters=[{k:v for k,v in c.items() if k not in ['skills','lessons']} for c in CURRICULUM['chapters']])
 @app.put('/api/profile')
 def profile(body:Profile,user=Depends(current_user)):
     with connect() as db:db.execute('INSERT INTO profiles(user_id,goal,minutes) VALUES(?,?,?) ON CONFLICT(user_id) DO UPDATE SET goal=excluded.goal,minutes=excluded.minutes',(user['id'],body.goal,body.minutes))
     return {'ok':True}
 @app.get('/api/lessons/{skill}')
 def lesson(skill:str,user=Depends(current_user)):
-    item=next((l for l in CURRICULUM['chapters'][0]['lessons'] if l['id']==skill),None)
+    item=LESSONS.get(skill)
     if not item:raise HTTPException(404,'Séance introuvable.')
+    chapter=SKILL_CHAPTER[item['skill']]
     with connect() as db:
-        if not ready(db) and user['role']!='teacher':raise HTTPException(409,'Ce parcours attend une validation pédagogique.')
+        if not ready(db,chapter) and user['role']!='teacher':raise HTTPException(409,'Ce parcours attend une validation pédagogique.')
         active=db.execute("SELECT id FROM runs WHERE user_id=? AND completed=0 AND mode IN ('diagnostic','final')",(user['id'],)).fetchone()
         if active:raise HTTPException(409,'Termine ton évaluation avant de consulter la séance.')
-    return item
+    return {**item,'chapter':chapter,'chapter_title':next(c['title'] for c in PILOT_CHAPTERS if c['id']==chapter)}
 
 def get_run(db,rid,uid):
     row=db.execute('SELECT * FROM runs WHERE id=? AND user_id=?',(rid,uid)).fetchone()
@@ -132,27 +144,29 @@ def next_question(db,run):
 @app.post('/api/runs')
 def start(body:Start,user=Depends(current_user)):
     with connect() as db:
+        chapter=pilot_chapter(body.chapter);skills={s['id'] for s in chapter_skills(chapter)}
+        if body.skill is not None and body.skill not in skills:raise HTTPException(400,'Cette compétence n’appartient pas au chapitre choisi.')
         db.lock(user['id'])
-        if not ready(db):raise HTTPException(409,'L’enseignant doit valider le contenu du pilote avant de l’ouvrir.')
+        if not ready(db,chapter):raise HTTPException(409,'L’enseignant doit valider le contenu du pilote avant de l’ouvrir.')
         active=db.execute('SELECT * FROM runs WHERE user_id=? AND completed=0',(user['id'],)).fetchone()
         if active:return {'id':active['id'],'resumed':True}
-        diagnostic=db.execute("SELECT id FROM runs WHERE user_id=? AND mode='diagnostic' AND completed=1",(user['id'],)).fetchone()
+        diagnostic=db.execute("SELECT id FROM runs WHERE user_id=? AND chapter=? AND mode='diagnostic' AND completed=1",(user['id'],chapter)).fetchone()
         if body.mode=='diagnostic' and diagnostic:return {'id':diagnostic['id'],'resumed':True}
         if body.mode!='diagnostic' and not diagnostic:raise HTTPException(409,'Commence par le diagnostic.')
         if body.mode=='practice' and body.skill is None:raise HTTPException(400,'Choisis une compétence.')
         if body.mode=='final':
-            practiced={r[0] for r in db.execute("SELECT DISTINCT skill FROM runs WHERE user_id=? AND mode='practice' AND completed=1",(user['id'],))}
-            if practiced!={s['id'] for s in SKILLS}:raise HTTPException(409,'Termine une séance pour chacune des trois compétences avant le bilan final.')
-        questions=[q for q in QUESTIONS if q['mode']==body.mode and (body.mode!='practice' or q['skill']==body.skill)]
+            practiced={r[0] for r in db.execute("SELECT DISTINCT skill FROM runs WHERE user_id=? AND chapter=? AND mode='practice' AND completed=1",(user['id'],chapter))}
+            if not skills<=practiced:raise HTTPException(409,'Termine une séance pour chacune des compétences du chapitre avant le bilan final.')
+        questions=[q for q in chapter_questions(chapter) if q['mode']==body.mode and (body.mode!='practice' or q['skill']==body.skill)]
         rid=secrets.token_hex(16)
-        db.execute('INSERT INTO runs(id,user_id,mode,skill,question_ids,snapshot) VALUES(?,?,?,?,?,?)',(rid,user['id'],body.mode,body.skill,json.dumps([q['id'] for q in questions]),json.dumps(questions,ensure_ascii=False)))
+        db.execute('INSERT INTO runs(id,user_id,chapter,mode,skill,question_ids,snapshot) VALUES(?,?,?,?,?,?,?)',(rid,user['id'],chapter,body.mode,body.skill,json.dumps([q['id'] for q in questions]),json.dumps(questions,ensure_ascii=False)))
     return {'id':rid,'resumed':False}
 @app.get('/api/runs/{rid}')
 def run(rid:str,user=Depends(current_user)):
     with connect() as db:
         r=get_run(db,rid,user['id']);q=next_question(db,r)
         count=db.execute('SELECT count(*) FROM attempts WHERE run_id=?',(rid,)).fetchone()[0]
-        return dict(id=rid,mode=r['mode'],completed=bool(r['completed']),answered=count,total=len(json.loads(r['snapshot'])),question=public_question(q) if q else None,result=run_result(db,r) if r['completed'] else None)
+        return dict(id=rid,mode=r['mode'],chapter=r['chapter'],completed=bool(r['completed']),answered=count,total=len(json.loads(r['snapshot'])),question=public_question(q) if q else None,result=run_result(db,r) if r['completed'] else None)
 @app.post('/api/runs/{rid}/hint')
 def hint(rid:str,body:Hint,user=Depends(current_user)):
     with connect() as db:
@@ -191,7 +205,7 @@ def overview(user=Depends(teacher)):
         for r in pending:
             q=next(q for q in json.loads(r['snapshot']) if q['id']==r['question_id'])
             reviews.append(dict(id=r['id'],username=r['username'],response=json.loads(r['response']),question=q))
-        return dict(learners=[dict(id=u['id'],username=u['username'],skills=evidence(db,u['id'])) for u in users],pending=reviews,ready=ready(db))
+        return dict(learners=[dict(id=u['id'],username=u['username'],skills=evidence(db,u['id'])) for u in users],pending=reviews,ready=ready(db),chapters=[{'id':c['id'],'title':c['title'],'ready':ready(db,c['id'])} for c in PILOT_CHAPTERS])
 @app.get('/api/teacher/content')
 def teacher_content(user=Depends(teacher)):
     with connect() as db:return dict(questions=[{**q,'published':is_published(db,q),'revision':revision(q)} for q in QUESTIONS],rules=RULES,curriculum=CURRICULUM)

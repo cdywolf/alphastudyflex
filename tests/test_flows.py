@@ -115,7 +115,7 @@ def test_remote_corpus_fallback_and_scope(clients):
         db.execute('INSERT INTO corpus_pages VALUES(?,?,?)',('manual-apef','page-0001.json',json.dumps(record)))
         db.execute('INSERT INTO corpus_coverage VALUES(?,?)',('manual-apef',json.dumps({'id':'manual-apef','status':'extracted'})))
     assert teacher.get('/api/teacher/sources/manual-apef').json()['content']['text']=='Extrait de test'
-    assert len(teacher.get('/api/teacher/sources').json())==17
+    assert len(teacher.get('/api/teacher/sources').json())==18
     assert teacher.get('/api/teacher/sources/unknown').status_code==404
 
 def test_first_teacher_setup_is_secret_and_single_use(clients,monkeypatch):

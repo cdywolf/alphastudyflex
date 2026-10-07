@@ -198,8 +198,227 @@
     {
       "id": "volcanoes",
       "title": "Le volcanisme",
-      "state": "planned",
-      "unit": "geology"
+      "state": "pilot",
+      "unit": "geology",
+      "skills": [
+        {
+          "id": "v-eruptions",
+          "title": "Caractériser les éruptions volcaniques",
+          "dimension": "expression",
+          "outcome": "Distinguer éruption effusive et éruption explosive et relier leur dynamique à la viscosité du magma et à sa teneur en gaz.",
+          "prerequisites": [
+            "Distinguer solide, liquide et gaz"
+          ],
+          "success": "Associer lave fluide et peu de gaz aux coulées calmes, lave visqueuse et gaz abondants aux explosions, et expliquer pourquoi.",
+          "sources": [
+            {
+              "id": "guide-almoufid",
+              "pdf_page": 42
+            },
+            {
+              "id": "guide-univers",
+              "pdf_page": 35
+            },
+            {
+              "id": "guide-univers",
+              "pdf_page": 36
+            },
+            {
+              "id": "manual-apef",
+              "pdf_page": 47
+            }
+          ]
+        },
+        {
+          "id": "v-edifice",
+          "title": "Lire la coupe d’un volcan",
+          "dimension": "outils",
+          "outcome": "Identifier cratère, cheminée, chambre magmatique, cône et coulée sur une coupe, et ordonner les étapes du magma à l’éruption.",
+          "prerequisites": [
+            "Lire une légende",
+            "Repérer haut et profondeur sur une coupe"
+          ],
+          "success": "Nommer chaque partie d’une coupe schématique et décrire le trajet du magma dans le bon ordre.",
+          "sources": [
+            {
+              "id": "manual-naciri",
+              "pdf_page": 15
+            },
+            {
+              "id": "guide-univers",
+              "pdf_page": 35
+            },
+            {
+              "id": "ex-volcano-corrige",
+              "pdf_page": 1
+            },
+            {
+              "id": "ex-volcano-corrige",
+              "pdf_page": 3
+            }
+          ]
+        },
+        {
+          "id": "v-tectonics",
+          "title": "Relier volcanisme et tectonique des plaques",
+          "dimension": "methodologie",
+          "outcome": "Expliquer la répartition des volcans par les dorsales (divergence) et les zones de subduction (convergence).",
+          "prerequisites": [
+            "v-eruptions",
+            "v-edifice"
+          ],
+          "chapter_prerequisites": [
+            "movement"
+          ],
+          "success": "Relier un type de volcanisme à un contexte tectonique et justifier par l’origine du magma.",
+          "sources": [
+            {
+              "id": "guide-almoufid",
+              "pdf_page": 44
+            },
+            {
+              "id": "guide-univers",
+              "pdf_page": 37
+            },
+            {
+              "id": "manual-apef",
+              "pdf_page": 45
+            },
+            {
+              "id": "manual-apef",
+              "pdf_page": 47
+            }
+          ]
+        }
+      ],
+      "lessons": [
+        {
+          "id": "v-eruptions",
+          "title": "Deux façons d’entrer en éruption",
+          "minutes": 15,
+          "skill": "v-eruptions",
+          "question": "Pourquoi certains volcans laissent-ils couler leur lave alors que d’autres explosent ?",
+          "body": "Un volcan en éruption rejette des produits liquides (la lave), gazeux et solides (cendres, lapilli, bombes). Lors d’une éruption effusive, la lave est fluide : les gaz s’échappent facilement et la lave s’écoule en coulées. Lors d’une éruption explosive, la lave est visqueuse : elle retient les gaz, peut former un dôme, et la pression augmente jusqu’à l’explosion, avec panaches de cendres et nuées ardentes. La viscosité du magma et sa quantité de gaz expliquent donc la différence.",
+          "observations": [
+            {
+              "label": "Éruption effusive",
+              "value": "Lave fluide, peu de gaz, coulées qui s’étalent, peu d’explosions."
+            },
+            {
+              "label": "Éruption explosive",
+              "value": "Lave visqueuse, gaz abondants, dôme, explosions, cendres projetées très haut."
+            },
+            {
+              "label": "Manipulation proposée par le guide",
+              "value": "Un mélange fluide s’épanche ; un mélange visqueux est projeté en mottes. À réaliser en classe avec l’enseignant."
+            }
+          ],
+          "document_type": "evidence",
+          "sources": [
+            {
+              "id": "guide-almoufid",
+              "pdf_page": 42
+            },
+            {
+              "id": "guide-almoufid",
+              "pdf_page": 43
+            },
+            {
+              "id": "guide-univers",
+              "pdf_page": 35
+            },
+            {
+              "id": "guide-univers",
+              "pdf_page": 36
+            },
+            {
+              "id": "manual-apef",
+              "pdf_page": 47
+            }
+          ],
+          "hints": [
+            "Compare la façon dont les gaz peuvent s’échapper d’un liquide fluide et d’un liquide pâteux.",
+            "Qu’arrive-t-il à la pression quand les gaz restent piégés ?"
+          ]
+        },
+        {
+          "id": "v-edifice",
+          "title": "Le trajet du magma",
+          "minutes": 15,
+          "skill": "v-edifice",
+          "question": "Par où passe le magma, de sa formation en profondeur jusqu’à la surface ?",
+          "body": "En profondeur, la fusion partielle de roches produit un magma. Il s’accumule dans une chambre magmatique, puis monte par la cheminée jusqu’au cratère. En surface, la lave s’écoule en coulées et se refroidit. L’accumulation des laves et des projections construit le cône du volcan. La lave est le magma qui a perdu une partie de ses gaz.",
+          "observations": [],
+          "document_type": "volcano",
+          "sources": [
+            {
+              "id": "manual-naciri",
+              "pdf_page": 15
+            },
+            {
+              "id": "manual-naciri",
+              "pdf_page": 16
+            },
+            {
+              "id": "guide-univers",
+              "pdf_page": 35
+            },
+            {
+              "id": "ex-volcano-corrige",
+              "pdf_page": 3
+            }
+          ],
+          "hints": [
+            "Commence par le plus profond : où le magma s’accumule-t-il ?",
+            "Le conduit qui relie la profondeur au sommet s’appelle la cheminée."
+          ]
+        },
+        {
+          "id": "v-tectonics",
+          "title": "Où sont les volcans, et pourquoi ?",
+          "minutes": 20,
+          "skill": "v-tectonics",
+          "question": "Pourquoi trouve-t-on des volcans le long des dorsales et autour de l’océan Pacifique ?",
+          "body": "Les volcans se situent surtout aux limites des plaques. Aux dorsales, les plaques s’écartent : la fusion partielle du manteau donne un magma fluide et un volcanisme sous-marin effusif, qui forme du basalte en coussins et une nouvelle lithosphère océanique. Dans les zones de subduction, une plaque océanique plonge sous une autre : une fusion partielle en profondeur donne un magma visqueux et riche en gaz, d’où un volcanisme explosif, comme dans la ceinture de feu du Pacifique. Il existe aussi un volcanisme à l’intérieur des plaques.",
+          "observations": [
+            {
+              "label": "Dorsale (divergence)",
+              "value": "Volcanisme sous-marin effusif, basalte en coussins, accrétion océanique."
+            },
+            {
+              "label": "Subduction (convergence)",
+              "value": "Volcanisme explosif, lave visqueuse, volcans en chaîne au bord des continents ou en arcs d’îles."
+            },
+            {
+              "label": "Carte mondiale",
+              "value": "Les volcans dessinent les dorsales et le pourtour du Pacifique."
+            }
+          ],
+          "document_type": "evidence",
+          "sources": [
+            {
+              "id": "guide-almoufid",
+              "pdf_page": 44
+            },
+            {
+              "id": "guide-univers",
+              "pdf_page": 37
+            },
+            {
+              "id": "manual-apef",
+              "pdf_page": 45
+            },
+            {
+              "id": "manual-apef",
+              "pdf_page": 47
+            }
+          ],
+          "hints": [
+            "Quel mouvement de plaques se produit à une dorsale ? et dans une zone de subduction ?",
+            "Relie ce mouvement à la nature du magma, puis au type d’éruption."
+          ]
+        }
+      ]
     },
     {
       "id": "magmatism",

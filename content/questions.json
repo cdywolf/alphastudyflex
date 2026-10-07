@@ -709,5 +709,713 @@
     ],
     "status": "draft",
     "authorship": "Question originale du pilote, correction humaine obligatoire."
+  },
+  {
+    "id": "vd-e1",
+    "version": 1,
+    "chapter": "volcanoes",
+    "mode": "diagnostic",
+    "skill": "v-eruptions",
+    "dimension": "expression",
+    "kind": "choice",
+    "prompt": "Un magma très visqueux qui retient beaucoup de gaz donne plutôt…",
+    "choices": [
+      "une éruption effusive",
+      "une éruption explosive",
+      "une coulée calme sans gaz"
+    ],
+    "answer": 1,
+    "explanation": "Un magma visqueux piège les gaz ; la pression monte jusqu’à l’explosion.",
+    "hints": [
+      "Les gaz s’échappent-ils facilement d’un liquide pâteux ?"
+    ],
+    "document": null,
+    "sources": [
+      {
+        "id": "guide-univers",
+        "pdf_page": 36
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote Volcanisme (v0.2), à valider par un enseignant."
+  },
+  {
+    "id": "vd-e2",
+    "version": 1,
+    "chapter": "volcanoes",
+    "mode": "diagnostic",
+    "skill": "v-eruptions",
+    "dimension": "expression",
+    "kind": "choice",
+    "prompt": "Vrai ou faux : le magma se forme dans la cheminée du volcan.",
+    "choices": [
+      "Vrai",
+      "Faux"
+    ],
+    "answer": 1,
+    "explanation": "Faux : le magma se forme en profondeur par fusion partielle de roches, puis monte par la cheminée.",
+    "hints": [
+      "La cheminée est un conduit de passage."
+    ],
+    "document": null,
+    "sources": [
+      {
+        "id": "ex-volcano-corrige",
+        "pdf_page": 1
+      },
+      {
+        "id": "ex-volcano-corrige",
+        "pdf_page": 3
+      },
+      {
+        "id": "guide-univers",
+        "pdf_page": 35
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote Volcanisme (v0.2), à valider par un enseignant."
+  },
+  {
+    "id": "vd-o1",
+    "version": 1,
+    "chapter": "volcanoes",
+    "mode": "diagnostic",
+    "skill": "v-edifice",
+    "dimension": "outils",
+    "kind": "choice",
+    "prompt": "Sur la coupe, que désigne le numéro 3 ?",
+    "choices": [
+      "La cheminée",
+      "La chambre magmatique",
+      "Le cratère",
+      "La coulée de lave"
+    ],
+    "answer": 1,
+    "explanation": "Le numéro 3, en profondeur, est la chambre magmatique où le magma s’accumule.",
+    "hints": [
+      "Cherche la partie la plus profonde."
+    ],
+    "document": "volcano",
+    "sources": [
+      {
+        "id": "manual-naciri",
+        "pdf_page": 15
+      },
+      {
+        "id": "ex-volcano2",
+        "pdf_page": 2
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote Volcanisme (v0.2), à valider par un enseignant."
+  },
+  {
+    "id": "vd-o2",
+    "version": 1,
+    "chapter": "volcanoes",
+    "mode": "diagnostic",
+    "skill": "v-edifice",
+    "dimension": "outils",
+    "kind": "choice",
+    "prompt": "Quel est l’ordre correct des étapes ?",
+    "choices": [
+      "Montée du magma → fusion des roches → accumulation en chambre → coulée qui refroidit",
+      "Fusion des roches en profondeur → accumulation en chambre magmatique → montée du magma → coulée qui refroidit",
+      "Accumulation en chambre → coulée qui refroidit → fusion des roches → montée du magma"
+    ],
+    "answer": 1,
+    "explanation": "Le magma naît de la fusion de roches, s’accumule, monte, puis la lave s’écoule et refroidit.",
+    "hints": [
+      "Par quoi tout commence-t-il, en profondeur ?"
+    ],
+    "document": null,
+    "sources": [
+      {
+        "id": "ex-volcano-corrige",
+        "pdf_page": 1
+      },
+      {
+        "id": "ex-volcano-corrige",
+        "pdf_page": 3
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote Volcanisme (v0.2), à valider par un enseignant."
+  },
+  {
+    "id": "vd-t1",
+    "version": 1,
+    "chapter": "volcanoes",
+    "mode": "diagnostic",
+    "skill": "v-tectonics",
+    "dimension": "methodologie",
+    "kind": "choice",
+    "prompt": "Au niveau d’une dorsale océanique, le volcanisme est surtout…",
+    "choices": [
+      "explosif, avec des laves visqueuses",
+      "effusif et sous-marin, avec du basalte en coussins",
+      "absent"
+    ],
+    "answer": 1,
+    "explanation": "Aux dorsales, les plaques s’écartent ; le volcanisme est effusif et forme du basalte en coussins.",
+    "hints": [
+      "Quel mouvement de plaques a lieu à une dorsale ?"
+    ],
+    "document": null,
+    "sources": [
+      {
+        "id": "guide-univers",
+        "pdf_page": 37
+      },
+      {
+        "id": "manual-apef",
+        "pdf_page": 47
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote Volcanisme (v0.2), à valider par un enseignant."
+  },
+  {
+    "id": "vd-t2",
+    "version": 1,
+    "chapter": "volcanoes",
+    "mode": "diagnostic",
+    "skill": "v-tectonics",
+    "dimension": "methodologie",
+    "kind": "choice",
+    "prompt": "Les nombreux volcans explosifs autour de l’océan Pacifique s’expliquent surtout par…",
+    "choices": [
+      "des zones de subduction",
+      "des dorsales",
+      "l’absence de plaques"
+    ],
+    "answer": 0,
+    "explanation": "Le pourtour du Pacifique est bordé de zones de subduction, à l’origine d’un volcanisme explosif.",
+    "hints": [
+      "Que se passe-t-il au bord du Pacifique entre plaques ?"
+    ],
+    "document": null,
+    "sources": [
+      {
+        "id": "manual-apef",
+        "pdf_page": 45
+      },
+      {
+        "id": "manual-apef",
+        "pdf_page": 47
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote Volcanisme (v0.2), à valider par un enseignant."
+  },
+  {
+    "id": "vp-e1",
+    "version": 1,
+    "chapter": "volcanoes",
+    "mode": "practice",
+    "skill": "v-eruptions",
+    "dimension": "expression",
+    "kind": "choice",
+    "prompt": "Vrai ou faux : la lave et le magma sont exactement la même chose.",
+    "choices": [
+      "Vrai",
+      "Faux"
+    ],
+    "answer": 1,
+    "explanation": "Faux : la lave est le magma arrivé en surface, qui a perdu une partie de ses gaz.",
+    "hints": [
+      "Que deviennent les gaz quand le magma arrive en surface ?",
+      "Pense à la différence entre profondeur et surface."
+    ],
+    "document": null,
+    "sources": [
+      {
+        "id": "manual-naciri",
+        "pdf_page": 16
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote Volcanisme (v0.2), à valider par un enseignant."
+  },
+  {
+    "id": "vp-e2",
+    "version": 1,
+    "chapter": "volcanoes",
+    "mode": "practice",
+    "skill": "v-eruptions",
+    "dimension": "expression",
+    "kind": "choice",
+    "prompt": "Pourquoi un dôme de lave peut-il annoncer une éruption explosive ?",
+    "choices": [
+      "Il laisse s’échapper tous les gaz",
+      "Il bouche le cratère et les gaz s’accumulent sous pression",
+      "Il refroidit le magma en profondeur"
+    ],
+    "answer": 1,
+    "explanation": "La lave visqueuse forme un dôme qui bouche le cratère ; les gaz piégés font monter la pression.",
+    "hints": [
+      "Où vont les gaz si la sortie est bouchée ?",
+      "Une pression qui augmente finit par…"
+    ],
+    "document": null,
+    "sources": [
+      {
+        "id": "guide-univers",
+        "pdf_page": 36
+      },
+      {
+        "id": "ex-volcano-corrige",
+        "pdf_page": 3
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote Volcanisme (v0.2), à valider par un enseignant."
+  },
+  {
+    "id": "vp-e3",
+    "version": 1,
+    "chapter": "volcanoes",
+    "mode": "practice",
+    "skill": "v-eruptions",
+    "dimension": "expression",
+    "kind": "choice",
+    "prompt": "Quelle éruption est en général la plus dangereuse pour les habitants proches ?",
+    "choices": [
+      "L’éruption effusive, car la lave est fluide",
+      "L’éruption explosive, car elle projette cendres et nuées ardentes très loin",
+      "Les deux sont sans danger"
+    ],
+    "answer": 1,
+    "explanation": "Une éruption explosive projette des matériaux sur de grandes distances ; une coulée effusive reste aussi un danger local.",
+    "hints": [
+      "Compare les distances atteintes par les produits.",
+      "Pense aux nuées ardentes."
+    ],
+    "document": null,
+    "sources": [
+      {
+        "id": "ex-volcano-corrige",
+        "pdf_page": 4
+      },
+      {
+        "id": "manual-competence",
+        "pdf_page": 45
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote Volcanisme (v0.2), à valider par un enseignant."
+  },
+  {
+    "id": "vp-o1",
+    "version": 1,
+    "chapter": "volcanoes",
+    "mode": "practice",
+    "skill": "v-edifice",
+    "dimension": "outils",
+    "kind": "choice",
+    "prompt": "Sur la coupe, que désigne le numéro 5 ?",
+    "choices": [
+      "Le cône",
+      "La coulée de lave",
+      "La cheminée",
+      "La chambre magmatique"
+    ],
+    "answer": 1,
+    "explanation": "Le numéro 5, qui descend sur le flanc, est une coulée de lave.",
+    "hints": [
+      "Regarde ce qui s’étale sur le flanc du volcan.",
+      "La lave s’écoule en…"
+    ],
+    "document": "volcano",
+    "sources": [
+      {
+        "id": "manual-naciri",
+        "pdf_page": 15
+      },
+      {
+        "id": "ex-volcano2",
+        "pdf_page": 3
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote Volcanisme (v0.2), à valider par un enseignant."
+  },
+  {
+    "id": "vp-o2",
+    "version": 1,
+    "chapter": "volcanoes",
+    "mode": "practice",
+    "skill": "v-edifice",
+    "dimension": "outils",
+    "kind": "choice",
+    "prompt": "Sur la coupe, que désigne le numéro 1 ?",
+    "choices": [
+      "Le cratère",
+      "La chambre magmatique",
+      "La coulée de lave",
+      "Le cône"
+    ],
+    "answer": 0,
+    "explanation": "Le numéro 1, au sommet, est le cratère par lequel sortent les produits volcaniques.",
+    "hints": [
+      "C’est l’ouverture au sommet.",
+      "Les gaz et la lave sortent par là."
+    ],
+    "document": "volcano",
+    "sources": [
+      {
+        "id": "manual-naciri",
+        "pdf_page": 15
+      },
+      {
+        "id": "ex-volcano2",
+        "pdf_page": 2
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote Volcanisme (v0.2), à valider par un enseignant."
+  },
+  {
+    "id": "vp-o3",
+    "version": 1,
+    "chapter": "volcanoes",
+    "mode": "practice",
+    "skill": "v-edifice",
+    "dimension": "outils",
+    "kind": "choice",
+    "prompt": "Quel élément monte par la cheminée lors d’une éruption ?",
+    "choices": [
+      "Le magma",
+      "L’eau de mer",
+      "Les fossiles"
+    ],
+    "answer": 0,
+    "explanation": "Le magma monte de la chambre magmatique jusqu’au cratère par la cheminée.",
+    "hints": [
+      "La cheminée relie la chambre au cratère.",
+      "Qu’y a-t-il dans la chambre ?"
+    ],
+    "document": null,
+    "sources": [
+      {
+        "id": "guide-univers",
+        "pdf_page": 35
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote Volcanisme (v0.2), à valider par un enseignant."
+  },
+  {
+    "id": "vp-t1",
+    "version": 1,
+    "chapter": "volcanoes",
+    "mode": "practice",
+    "skill": "v-tectonics",
+    "dimension": "methodologie",
+    "kind": "choice",
+    "prompt": "Dans une zone de subduction, d’où vient le magma des volcans ?",
+    "choices": [
+      "De la fonte de la glace",
+      "D’une fusion partielle en profondeur liée à l’enfoncement de la plaque océanique",
+      "Du noyau terrestre directement"
+    ],
+    "answer": 1,
+    "explanation": "L’enfouissement de la plaque océanique provoque en profondeur une fusion partielle qui donne le magma.",
+    "hints": [
+      "Quelle plaque s’enfonce ?",
+      "Fusion partielle : seule une partie des roches fond."
+    ],
+    "document": null,
+    "sources": [
+      {
+        "id": "guide-almoufid",
+        "pdf_page": 44
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote Volcanisme (v0.2), à valider par un enseignant."
+  },
+  {
+    "id": "vp-t2",
+    "version": 1,
+    "chapter": "volcanoes",
+    "mode": "practice",
+    "skill": "v-tectonics",
+    "dimension": "methodologie",
+    "kind": "open",
+    "prompt": "Explique en deux ou trois phrases pourquoi on trouve beaucoup de volcans explosifs autour de l’océan Pacifique.",
+    "choices": [],
+    "answer": null,
+    "explanation": "Réponse attendue : le pourtour du Pacifique est bordé de zones de subduction ; une plaque océanique s’y enfonce ; une fusion partielle en profondeur produit un magma visqueux et riche en gaz ; les éruptions sont donc explosives.",
+    "hints": [
+      "Commence par le mouvement des plaques au bord du Pacifique.",
+      "Relie ensuite magma visqueux et explosions."
+    ],
+    "document": null,
+    "sources": [
+      {
+        "id": "manual-apef",
+        "pdf_page": 45
+      },
+      {
+        "id": "manual-apef",
+        "pdf_page": 47
+      },
+      {
+        "id": "guide-almoufid",
+        "pdf_page": 44
+      }
+    ],
+    "criteria": [
+      "Nomme la subduction ou la plongée d’une plaque océanique.",
+      "Explique l’origine du magma (fusion partielle en profondeur).",
+      "Relie magma visqueux / riche en gaz au caractère explosif."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote Volcanisme (v0.2), à valider par un enseignant."
+  },
+  {
+    "id": "vf-e1",
+    "version": 1,
+    "chapter": "volcanoes",
+    "mode": "final",
+    "skill": "v-eruptions",
+    "dimension": "expression",
+    "kind": "choice",
+    "prompt": "Quelle caractéristique correspond à une éruption effusive ?",
+    "choices": [
+      "Une lave fluide qui s’écoule en coulées",
+      "Un panache de cendres à 20 km",
+      "Un dôme de lave visqueuse"
+    ],
+    "answer": 0,
+    "explanation": "L’éruption effusive émet une lave fluide qui s’écoule calmement.",
+    "hints": [
+      "Effusif : la lave s’épanche."
+    ],
+    "document": null,
+    "sources": [
+      {
+        "id": "guide-univers",
+        "pdf_page": 36
+      },
+      {
+        "id": "manual-apef",
+        "pdf_page": 47
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote Volcanisme (v0.2), à valider par un enseignant."
+  },
+  {
+    "id": "vf-e2",
+    "version": 1,
+    "chapter": "volcanoes",
+    "mode": "final",
+    "skill": "v-eruptions",
+    "dimension": "expression",
+    "kind": "choice",
+    "prompt": "Qu’est-ce qui détermine surtout le type d’éruption ?",
+    "choices": [
+      "La couleur des roches",
+      "La viscosité du magma et sa quantité de gaz",
+      "La taille du cratère"
+    ],
+    "answer": 1,
+    "explanation": "La viscosité et la teneur en gaz du magma déterminent la dynamique de l’éruption.",
+    "hints": [
+      "Pense à la manipulation avec deux mélanges."
+    ],
+    "document": null,
+    "sources": [
+      {
+        "id": "guide-univers",
+        "pdf_page": 36
+      },
+      {
+        "id": "guide-almoufid",
+        "pdf_page": 43
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote Volcanisme (v0.2), à valider par un enseignant."
+  },
+  {
+    "id": "vf-o1",
+    "version": 1,
+    "chapter": "volcanoes",
+    "mode": "final",
+    "skill": "v-edifice",
+    "dimension": "outils",
+    "kind": "choice",
+    "prompt": "Sur la coupe, que désigne le numéro 2 ?",
+    "choices": [
+      "La cheminée",
+      "Le cône",
+      "La coulée de lave",
+      "Le cratère"
+    ],
+    "answer": 0,
+    "explanation": "Le numéro 2 est la cheminée qui relie la chambre magmatique au cratère.",
+    "hints": [
+      "C’est le conduit vertical."
+    ],
+    "document": "volcano",
+    "sources": [
+      {
+        "id": "manual-naciri",
+        "pdf_page": 15
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote Volcanisme (v0.2), à valider par un enseignant."
+  },
+  {
+    "id": "vf-o2",
+    "version": 1,
+    "chapter": "volcanoes",
+    "mode": "final",
+    "skill": "v-edifice",
+    "dimension": "outils",
+    "kind": "choice",
+    "prompt": "Sur la coupe, que désigne le numéro 4 ?",
+    "choices": [
+      "La chambre magmatique",
+      "Le cône formé par l’accumulation des produits",
+      "Le cratère"
+    ],
+    "answer": 1,
+    "explanation": "Le numéro 4 est le cône, construit par l’accumulation des laves et projections.",
+    "hints": [
+      "C’est le relief du volcan."
+    ],
+    "document": "volcano",
+    "sources": [
+      {
+        "id": "guide-univers",
+        "pdf_page": 35
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote Volcanisme (v0.2), à valider par un enseignant."
+  },
+  {
+    "id": "vf-t1",
+    "version": 1,
+    "chapter": "volcanoes",
+    "mode": "final",
+    "skill": "v-tectonics",
+    "dimension": "methodologie",
+    "kind": "choice",
+    "prompt": "Aux dorsales, sous 2 000 m d’eau, pourquoi les éruptions ne sont-elles pas explosives ?",
+    "choices": [
+      "Car il n’y a pas de magma",
+      "Car la lave est fluide et la forte pression de l’eau empêche les explosions",
+      "Car les plaques se rapprochent"
+    ],
+    "answer": 1,
+    "explanation": "La lave basaltique est fluide et la pression de l’eau empêche les explosions ; la lave forme des coussins.",
+    "hints": [
+      "Pense à la lave et à l’eau au-dessus."
+    ],
+    "document": null,
+    "sources": [
+      {
+        "id": "guide-univers",
+        "pdf_page": 37
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote Volcanisme (v0.2), à valider par un enseignant."
+  },
+  {
+    "id": "vf-t2",
+    "version": 1,
+    "chapter": "volcanoes",
+    "mode": "final",
+    "skill": "v-tectonics",
+    "dimension": "methodologie",
+    "kind": "choice",
+    "prompt": "Un volcan des Andes émet une lave visqueuse lors d’éruptions explosives. Dans quel contexte se trouve-t-il ?",
+    "choices": [
+      "Une dorsale océanique",
+      "Une zone de subduction",
+      "Le centre d’une plaque sans activité"
+    ],
+    "answer": 1,
+    "explanation": "Les Andes se situent au-dessus d’une zone de subduction, où le volcanisme est explosif.",
+    "hints": [
+      "Quelle plaque plonge sous l’Amérique du Sud ?"
+    ],
+    "document": null,
+    "sources": [
+      {
+        "id": "guide-almoufid",
+        "pdf_page": 44
+      },
+      {
+        "id": "manual-naciri",
+        "pdf_page": 24
+      }
+    ],
+    "criteria": [
+      "Identifier la proposition correcte dans la situation fournie."
+    ],
+    "status": "draft",
+    "authorship": "Question originale préparée pour le pilote Volcanisme (v0.2), à valider par un enseignant."
   }
 ]

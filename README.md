@@ -2,14 +2,15 @@
 
 Un MVP pédagogique de SVT pour la deuxième année collégiale au Maroc.
 
-**Itération 0.1.0 : socle exécutable et premier parcours de tectonique.** Le code peut être poussé sur GitHub et déployé sur Render Free avec une base PostgreSQL Neon Free. Le tutorat génératif et l’exploitation pédagogique complète de tous les chapitres restent à développer.
+**Itération 0.2.0 : deux chapitres pilotes, tectonique des plaques et volcanisme.** Les 20 questions du volcanisme sont des brouillons à faire valider par l’enseignant avant tout usage élève. Le code peut être déployé sur Render Free avec une base PostgreSQL Neon Free ; aucun déploiement de la 0.2.0 n’a été fait. Le tutorat génératif reste à développer.
 
 ## Ce qui fonctionne
 
 - Comptes élève et enseignant, sessions conservées côté serveur et mots de passe hachés.
 - Premier compte enseignant créé en ligne avec un code d’installation à usage initial unique, ou localement par CLI.
 - Inscription élève avec code d’invitation lorsque l’application est hébergée.
-- Validation enseignant des 19 questions et de leurs supports avant ouverture du pilote.
+- Validation enseignant des questions et de leurs supports avant ouverture de chaque chapitre (19 en tectonique, 20 en volcanisme).
+- Chapitres pilotes indépendants : chaque chapitre a son diagnostic, ses séances et son bilan ; un prérequis d’un autre chapitre est signalé à l’élève sans être bloquant.
 - Diagnostic de 6 questions, 3 séances et 7 questions d’entraînement, puis évaluation finale de 6 questions distinctes.
 - Explications préparées, indices progressifs, enregistrement des aides utilisées et correction humaine d’une réponse rédigée.
 - Plan personnel tenant compte des résultats et des prérequis, bilans séparant connaissances, outils et méthode.
@@ -52,7 +53,7 @@ Ouvrir http://127.0.0.1:8000. Le mot de passe enseignant est saisi interactiveme
 
 1. Se connecter comme enseignant.
 2. Lire **Cadre pédagogique**, puis les séances, questions et critères dans **Contenus**.
-3. Valider les 19 questions après vérification ; cela ouvre le parcours pilote.
+3. Valider les questions d’un chapitre après vérification ; cela ouvre ce chapitre.
 4. Créer un compte élève, terminer le diagnostic puis les trois séances et le bilan final.
 5. Revenir dans **Mes élèves** pour corriger la réponse rédigée.
 
